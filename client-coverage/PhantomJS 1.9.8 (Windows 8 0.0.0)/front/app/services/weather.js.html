@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/services/weather.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">./front/app/services/weather.js</span></h1>
+    <h2>
+        Statements: <span class="metric">64.29% <small>(18 / 28)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">57.14% <small>(8 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">64.29% <small>(18 / 28)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./front/app/services/</a> &#187; weather.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">39</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+.factory('weatherService', ['$q', 'moment', 'SocketIO',
+  function($q, moment, SocketIO) {
+    var today, history, forecast;
+&nbsp;
+    function stripTimezoneFromDateString (originalDate) {
+      return originalDate.substr(0, 19);
+    }
+&nbsp;
+    function getTodayWeather(rawWeather) {
+      today = {
+        temperature: {
+          now: Math.round(rawWeather.current.temperature),
+          min: Math.round(rawWeather.forecast[0].temperatureMin),
+          max: Math.round(rawWeather.forecast[0].temperatureMax)
+        },
+        cityName: rawWeather.current.city,
+        air: {
+          humidity: Math.round(rawWeather.current.humidity * 100),
+          pressure: Math.round(rawWeather.current.pressure),
+          windSpeed: Math.round(rawWeather.current.windSpeed)
+        },
+        sunTime: {
+          sunset: stripTimezoneFromDateString(rawWeather.current.sunsetDate),
+          sunrise: stripTimezoneFromDateString(rawWeather.current.sunriseDate)
+        },
+        weatherIcon: 'icon-weather-' + rawWeather.current.icon,
+        summary: rawWeather.current.summary,
+        lastReportedTime: stripTimezoneFromDateString(rawWeather.current.date)
+      };
+      return today;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getForeWeather(rawWeather) {</span>
+<span class="cstat-no" title="statement not covered" >      var limitCounts = 5;</span>
+<span class="cstat-no" title="statement not covered" >      forecast = rawWeather.forecast.slice(1, limitCounts + 1).map(<span class="fstat-no" title="function not covered" >function (forecast) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          date: stripTimezoneFromDateString(forecast.date),
+          temperature: {
+            min: Math.round(forecast.temperatureMin),
+            max: Math.round(forecast.temperatureMax)
+          }
+        };
+      });
+<span class="cstat-no" title="statement not covered" >      return forecast;</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getHistoricalWeather(rawWeather) {</span>
+<span class="cstat-no" title="statement not covered" >      var limitCounts = 5;</span>
+<span class="cstat-no" title="statement not covered" >      history = rawWeather.history.reverse().slice(1, limitCounts + 1).map(<span class="fstat-no" title="function not covered" >function (history) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          date: stripTimezoneFromDateString(history.date),
+          temperature: {
+            min: Math.round(history.temperatureMin),
+            max: Math.round(history.temperatureMax)
+          }
+        };
+      });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      return history;</span>
+    }
+&nbsp;
+    function getWeatherHistory (rawHistory) {
+      return rawHistory.map(function (history) {
+        return {
+          temperature: {
+            low: Math.round(history.temperatureMin),
+            high: Math.round(history.temperatureMax)
+          },
+          air: {
+            humidity: Math.round(history.humidity * 100),
+            pressure: Math.round(history.pressure),
+            windSpeed: Math.round(history.windSpeed)
+          },
+          sunTime: {
+            sunset: stripTimezoneFromDateString(history.sunsetDate),
+            sunrise: stripTimezoneFromDateString(history.sunriseDate)
+          },
+          weatherIcon: 'icon-weather-' + history.icon,
+          date: stripTimezoneFromDateString(history.date),
+          city: history.city
+        };
+      });
+    }
+&nbsp;
+    return {
+      _getTodayWeather: getTodayWeather,
+      _getForeWeather: getForeWeather,
+      _getHistoricalWeather: getHistoricalWeather,
+      _getWeatherHistory: getWeatherHistory,
+&nbsp;
+      watchWeatherHistory: function (callback) {
+        SocketIO.watch('assurf:weatherhistory', <span class="fstat-no" title="function not covered" >function (rawData) {</span>
+<span class="cstat-no" title="statement not covered" >          callback(getWeatherHistory(rawData.history));</span>
+        });
+      },
+&nbsp;
+      watchWeather: function (callback) {
+        SocketIO.watch('assurf:weather', <span class="fstat-no" title="function not covered" >function(weather) {</span>
+<span class="cstat-no" title="statement not covered" >          callback({</span>
+            todayWeather: getTodayWeather(weather),
+            foreWeather: getForeWeather(weather),
+            historicalWeather: getHistoricalWeather(weather)
+          });
+        });
+      },
+&nbsp;
+      emitToWeatherHistory: function (startDate, endDate) {
+        if (endDate &lt; startDate) {
+          endDate = [startDate, startDate = endDate][0]; // do swap
+        }
+&nbsp;
+        //console.log('Testing ivan:', startDate, endDate);
+&nbsp;
+        SocketIO.emit('assurf:weatherhistory', {
+          'dateRange': {
+            'from': moment(startDate).format('YYYY-MM-DD'),
+            'to': moment(endDate).format('YYYY-MM-DD')
+          }
+        });
+      }
+    };
+  }
+]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f957c6eb-d2a4-4fcb-b528-0eadc05112ae" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core" afterPath="$PROJECT_DIR$/core" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/views/index.jade" afterPath="$PROJECT_DIR$/cloud/views/index.jade" />
+    </list>
+    <ignored path="ASsurf.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ASsurf" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="drilldown.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/elements/solar-energy-production/drilldown.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="269" column="43" selection-start-line="269" selection-start-column="43" selection-end-line="269" selection-end-column="43" />
+              <folding>
+                <marker date="1444745601420" expanded="true" signature="5310:5363" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="element.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/elements/total-energy-production/element.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+              <folding>
+                <marker date="1444746308434" expanded="true" signature="84:87" placeholder="[...]" />
+                <marker date="1444746308434" expanded="true" signature="3187:3195" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1447942308489" expanded="true" signature="265:368" placeholder="{&quot;reconnection delay&quot;: 1000...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="element.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/elements/solar-energy-production/element.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding>
+                <marker date="1444746308432" expanded="true" signature="4149:4155" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="element.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/elements/realtime-power/element.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sources.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/views/includes/sp/sources.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.52">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <marker date="1444745601389" expanded="true" signature="33:115" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="90:115" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="133:310" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="752:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="807:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="1431:1580" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="1593:3197" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="1650:2704" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="2215:2375" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="2393:2534" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="2552:2704" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="2719:2858" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="2762:2858" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="2873:3055" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="2917:3055" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3070:3197" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3086:3197" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3208:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3265:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3728:3833" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3850:4786" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3911:4262" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="3958:4262" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4281:4423" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4325:4423" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4442:4635" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4487:4635" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4654:4786" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4674:4786" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4801:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="4862:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="5481:5579" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="5600:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="5665:6004" placeholder="..." />
+                <marker date="1444745601389" expanded="true" signature="5692:6004" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cloud/views/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.0150251">
+              <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sp-list-scroll-bar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/directives/sp-list-scroll-bar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main-stage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/partials/main-stage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="element-show-loading.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/app/directives/element-show-loading.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/front/app/services/solar-tag.js" />
+        <option value="$PROJECT_DIR$/front/app/services/facility-details.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/realtime-power/drilldown.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/realtime-power/drilldown.html" />
+        <option value="$PROJECT_DIR$/front/app/partials/more-panels/power-plant-detail.html" />
+        <option value="$PROJECT_DIR$/front/app/partials/facility-details.html" />
+        <option value="$PROJECT_DIR$/front/app/services/source-selection.js" />
+        <option value="$PROJECT_DIR$/front/app/directives/element-show-loading.js" />
+        <option value="$PROJECT_DIR$/front/app/services/weather.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/realtime-power/template.html" />
+        <option value="$PROJECT_DIR$/front/app/services/socket-io.js" />
+        <option value="$PROJECT_DIR$/front/app/main.js" />
+        <option value="$PROJECT_DIR$/cloud/kissmetrics.js" />
+        <option value="$PROJECT_DIR$/front/app/kissmetrics.js" />
+        <option value="$PROJECT_DIR$/tasks/vendor.js" />
+        <option value="$PROJECT_DIR$/front/app/services/kissmetrics.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/savings/element.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/realtime-power/element.js" />
+        <option value="$PROJECT_DIR$/core/client/components/platform-panel/app/directives/account-view.js" />
+        <option value="$PROJECT_DIR$/front/app/directives/nav-dropdown.js" />
+        <option value="$PROJECT_DIR$/front/app/directives/mobile-nav-dropdown.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/actual-predicted-energy/element.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/avoided-carbon/element.js" />
+        <option value="$PROJECT_DIR$/front/app/controllers/FacilityDetails.js" />
+        <option value="$PROJECT_DIR$/cloud/views/includes/sp/sources.jade" />
+        <option value="$PROJECT_DIR$/core/client/components/settings/app/shared/source.service.js" />
+        <option value="$PROJECT_DIR$/core/client/components/settings/sandbox/sandbox.html" />
+        <option value="$PROJECT_DIR$/core/client/components/settings/app/sources-management/source.controller.js" />
+        <option value="$PROJECT_DIR$/core/client/components/settings/app/sources-management/list.template.html" />
+        <option value="$PROJECT_DIR$/core/client/components/settings/assets/scss/partials/_pages/_source.scss" />
+        <option value="$PROJECT_DIR$/front/app/controllers/SelectionPanel.js" />
+        <option value="$PROJECT_DIR$/front/app/services/power.js" />
+        <option value="$PROJECT_DIR$/cloud/views/includes/sp/kpi.jade" />
+        <option value="$PROJECT_DIR$/front/vendor/countup.js/countup.js" />
+        <option value="$PROJECT_DIR$/front/app/directives/animated-number.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/equivalencies/element.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/solar-energy-production/template.html" />
+        <option value="$PROJECT_DIR$/front/assets/scss/partials/_float-panels.scss" />
+        <option value="$PROJECT_DIR$/front/assets/scss/partials/_grid.scss" />
+        <option value="$PROJECT_DIR$/front/assets/scss/partials/_elements.scss" />
+        <option value="$PROJECT_DIR$/front/assets/scss/partials/_responsive.scss" />
+        <option value="$PROJECT_DIR$/front/app/services/saving.js" />
+        <option value="$PROJECT_DIR$/test/unit/front/app/elements/solar-energy-production/drilldown.spec.js" />
+        <option value="$PROJECT_DIR$/front/app/services/energy.js" />
+        <option value="$PROJECT_DIR$/front/app/partials/main-stage.html" />
+        <option value="$PROJECT_DIR$/front/app/elements/solar-energy-production/drilldown.html" />
+        <option value="$PROJECT_DIR$/front/app/elements/total-energy-production/element.js" />
+        <option value="$PROJECT_DIR$/front/app/app.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/solar-energy-production/drilldown.js" />
+        <option value="$PROJECT_DIR$/front/app/elements/solar-energy-production/element.js" />
+        <option value="$PROJECT_DIR$/cloud/views/index.jade" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <task-name>bower</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>cover-server-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="vendor" />
+            </dependencies>
+            <task-name>cover-client-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>css</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="css" />
+            </dependencies>
+            <task-name>css:watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="fonts" />
+              <dependency value="images" />
+              <dependency value="components" />
+            </dependencies>
+            <task-name>files</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>fonts</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>images</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>components</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>compress-js</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>compress-css</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>compress-img</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="compress-js" />
+              <dependency value="compress-css" />
+              <dependency value="compress-img" />
+            </dependencies>
+            <task-name>compress</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>inject</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>js:template</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="js:template" />
+            </dependencies>
+            <task-name>js:app</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="js:app" />
+            </dependencies>
+            <task-name>js:fingerprint</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="js:fingerprint" />
+            </dependencies>
+            <task-name>js</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="js" />
+            </dependencies>
+            <task-name>js:watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshint:cloud</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshint:front</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="jshint:front" />
+              <dependency value="jshint:cloud" />
+            </dependencies>
+            <task-name>jshint</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>test-server-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="vendor" />
+            </dependencies>
+            <task-name>test-client-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>vendor</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="css:watch" />
+              <dependency value="js:watch" />
+            </dependencies>
+            <task-name>watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean:dist</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>build</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>test</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>coverage</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="build" />
+              <dependency value="watch" />
+            </dependencies>
+            <task-name>default</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/core/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <task-name>clean-apidoc</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-apidoc" />
+            </dependencies>
+            <task-name>apidoc</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-general</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-components</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-datasense</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-presentation</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-management</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-helpandupdates</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-platform</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-dist:app</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-dist:tmpl</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean-platformpanel</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>settings:js:template</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="settings:js:template" />
+            </dependencies>
+            <task-name>settings:js:app</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="settings:js:app" />
+            </dependencies>
+            <task-name>settings:js</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="settings:js" />
+            </dependencies>
+            <task-name>settings:js:watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>settings:css</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="settings:css" />
+              <dependency value="settings:js" />
+            </dependencies>
+            <task-name>settings:build</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>settings:sandbox:server</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="settings:build" />
+              <dependency value="settings:sandbox:server" />
+            </dependencies>
+            <task-name>settings:sandbox:start</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>build-datasense</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>build-presentation</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>build-management</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>build-helpandupdates</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>reference-jade</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>sync group0:0</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="sync group0:0" />
+            </dependencies>
+            <task-name>sync group0:1</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="sync group0:1" />
+            </dependencies>
+            <task-name>sync group0:2</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="sync group0:2" />
+            </dependencies>
+            <task-name>sync group0:3</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="sync group0:3" />
+            </dependencies>
+            <task-name>sync group0:4</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="sync group0:4" />
+            </dependencies>
+            <task-name>sync group0:5</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="sync group0:5" />
+            </dependencies>
+            <task-name>sync group0:6</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="sync group0:6" />
+            </dependencies>
+            <task-name>concat</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>cover-server-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>cover-client-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>coverage</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="fonts" />
+              <dependency value="images" />
+            </dependencies>
+            <task-name>files</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>fonts</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>images</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>ppanel:template</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="ppanel:template" />
+            </dependencies>
+            <task-name>ppanel:app</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="ppanel:app" />
+            </dependencies>
+            <task-name>build-component-platformpanel</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-general" />
+            </dependencies>
+            <task-name>styles-general</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-components" />
+            </dependencies>
+            <task-name>styles-components</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-datasense" />
+            </dependencies>
+            <task-name>styles-datasense</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-presentation" />
+            </dependencies>
+            <task-name>styles-presentation</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-management" />
+            </dependencies>
+            <task-name>styles-management</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-helpandupdates" />
+            </dependencies>
+            <task-name>styles-helpandupdates</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean-platform" />
+            </dependencies>
+            <task-name>styles-platform</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>styles</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>tmpl-helpandupdates</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>tmpl-datasense</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>tmpl-presentation</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>tmpl-management</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>tmpl-component-platformpanel</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>reference</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>template</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>test-server-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>test-client-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>test-unit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshint-client</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshint-server</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="jshint-client" />
+              <dependency value="jshint-server" />
+            </dependencies>
+            <task-name>jshint</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>default</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+    </gulpfiles>
+  </component>
+  <component name="JsKarmaPackageDirSetting">
+    <data>F:\brightergy\ASsurf\node_modules\karma</data>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASsurf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="269" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="297" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="299" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="973" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="291" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="290" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="291" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="966" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\brightergy\ASsurf\front\app\services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\brightergy\ASsurf\front\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.Assurf">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="UT-Client" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="$PROJECT_DIR$/karma.conf.js">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Assurf" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="cloud/main.js" application-parameters="--nocluster" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="PORT" value="3000" />
+        <env name="ENV" value="development" />
+        <env name="INSTANCE" value="blmean_local" />
+        <env name="PARALLEL_PROCESSING" value="5" />
+        <env name="DOMAIN" value="http://localhost:3000" />
+        <env name="PLATFORMDOMAIN" value="http://localhost:3000" />
+        <env name="DB_CONNECTION" value="mongodb://127.0.0.1:27017/BrighterLink" />
+        <env name="REDIS_PORT" value="6379" />
+        <env name="REDIS_HOST" value="127.0.0.1" />
+        <env name="SESSION_KEY" value="mySuperPuperKey" />
+        <env name="SESSION_COOKIENAME" value="brighterlink.sessid.local" />
+        <env name="SESSION_COOKIEDOMAIN" value=".brightergy.com" />
+        <env name="EMAIL_USERNAME" value="BL_Dev@brightergy.com" />
+        <env name="EMAIL_PASSWORD" value="9vlC5q)l5Osg6%g" />
+        <env name="EMAIL_RECIPIENTS_ERROROCCURED" value="coolsamar207@gmail.com, ishekhurin@gmail.com, daniel.keith@brightergy.com" />
+        <env name="EMAIL_RECIPIENTS_NEWUTILITYPROVIDER" value="services@brightergy.com" />
+        <env name="SALESFORCE_AUTH_URL" value="https://brightergyvault--testlot.cs8.my.salesforce.com" />
+        <env name="SALESFORCE_AUTH_USERNAME" value="ishekhurin@brightergy.com.testlot" />
+        <env name="SALESFORCE_AUTH_PASSWORD" value="IlyaShekhurinPass1" />
+        <env name="SALESFORCE_AUTH_APIKEY" value="ffd1673c-d8f2-4aae-b039-dab82dd52b28" />
+        <env name="SALESFORCE_LOADDATACRONTIME" value="0 */20 * * * *" />
+        <env name="TEMPOIQ_APIKEY" value="879692b6d0ef4736b919d4d9479f49de" />
+        <env name="TEMPOIQ_APISECRET" value="f8d47426a98d4c129398091b38fd0b5c" />
+        <env name="TEMPOIQ_HOST" value="prod2-brightergy.backend.tempoiq.com" />
+        <env name="ENPHASE_APIKEY" value="dd2e83da5e07ae503f7139c46081c7a1" />
+        <env name="ENPHASE_AUTHURL" value="https://enlighten.enphaseenergy.com/app_user_auth/new?app_id=1409611230371" />
+        <env name="ENPHASE_APIURL" value="https://api.enphaseenergy.com/api/v2" />
+        <env name="FORECAST_APIKEY" value="ac878851ddb759abd6714564b015545e" />
+        <env name="FORECAST_LOADDATACRONTIME" value="0 0 6 * * *" />
+        <env name="SMARTYSTREETS_AUTHID" value="ecd1ef91-329c-4b0b-b2a1-a934c851df38" />
+        <env name="SMARTYSTREETS_AUTHTOKEN" value="9qNUXObGaVIe5OaHwj7J6OxApHvvq%2Bs2AVwBb%2Fn0Tqk0p4XaL0BsM7mFOC4uGqyz3j7LszIXntXhlJ47y8kDgg%3D%3D" />
+        <env name="SMARTYSTREETS_APIURL" value="https://api.smartystreets.com/street-address" />
+        <env name="AWS_AUTH_ACCESSKEYID" value="AKIAJGSJ4AEKY2PPEGDQ" />
+        <env name="AWS_AUTH_SECRETACCESSKEY" value="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" />
+        <env name="AWS_AUTH_REGION" value="us-west-2" />
+        <env name="AWS_ROUTE53_HOSTEDZONEID" value="Z1TYONFNISU9NJ" />
+        <env name="AWS_ROUTE53_RESOURCERECORDSETBASENAME" value=".brightergy.com." />
+        <env name="AWS_ROUTE53_RESOURCERECORDVALUE" value="brighterlink.brightergy.com." />
+        <env name="ONEALL_PUBLICKEY" value="a349ba4a-896d-4726-b7c2-f38e417cc15f" />
+        <env name="ONEALL_PRIVATEKEY" value="b264aefe-4f4f-4b1a-92f5-8ff6c3f9f491" />
+        <env name="ONEALL_APIURL" value="https://brightergy.api.oneall.com" />
+        <env name="ONEALL_USERTOKENCRYPTOKEY" value="qwerty" />
+        <env name="WEBSOCKETSRESTARTCRONTIME" value="0 */5 * * * *" />
+        <env name="DATADOG_EXPRESS" value="false" />
+        <env name="APIDOMAIN" value="http://localhost:3000" />
+      </envs>
+      <browser start="true" url="http://localhost:3000/" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Core" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="app.js" application-parameters="--nocluster" working-dir="$PROJECT_DIR$/core">
+      <envs>
+        <env name="PORT" value="7000" />
+        <env name="ENV" value="development" />
+        <env name="INSTANCE" value="blmean_local" />
+        <env name="PARALLEL_PROCESSING" value="5" />
+        <env name="DOMAIN" value="http://localhost:7000" />
+        <env name="DB_CONNECTION" value="mongodb://127.0.0.1:27017/BrighterLink" />
+        <env name="REDIS_PORT" value="6379" />
+        <env name="REDIS_HOST" value="127.0.0.1" />
+        <env name="SESSION_KEY" value="mySuperPuperKey" />
+        <env name="SESSION_COOKIENAME" value="brighterlink.sessid.local" />
+        <env name="SESSION_COOKIEDOMAIN" value=".brightergy.com" />
+        <env name="EMAIL_USERNAME" value="services@brightergy.com" />
+        <env name="EMAIL_PASSWORD" value="veph4Pad" />
+        <env name="EMAIL_RECIPIENTS_ERROROCCURED" value="coolsamar207@gmail.com, ishekhurin@gmail.com, daniel.keith@brightergy.com" />
+        <env name="EMAIL_RECIPIENTS_NEWUTILITYPROVIDER" value="services@brightergy.com" />
+        <env name="SALESFORCE_AUTH_URL" value="https://brightergyvault--testlot.cs8.my.salesforce.com" />
+        <env name="SALESFORCE_AUTH_USERNAME" value="ishekhurin@brightergy.com.testlot" />
+        <env name="SALESFORCE_AUTH_PASSWORD" value="test_password123" />
+        <env name="SALESFORCE_AUTH_APIKEY" value="ffd1673c-d8f2-4aae-b039-dab82dd52b28" />
+        <env name="SALESFORCE_LOADDATACRONTIME" value="0 */20 * * * *" />
+        <env name="TEMPOIQ_APIKEY" value="b36e28c9fc824ec1be4b6cb3abcbf4db" />
+        <env name="TEMPOIQ_APISECRET" value="39dd3a0e163f4466b3defe839dd251e7" />
+        <env name="TEMPOIQ_HOST" value="prod2-brightergy.backend.tempoiq.com" />
+        <env name="ENPHASE_APIKEY" value="dd2e83da5e07ae503f7139c46081c7a1" />
+        <env name="ENPHASE_AUTHURL" value="https://enlighten.enphaseenergy.com/app_user_auth/new?app_id=1409611230371" />
+        <env name="ENPHASE_APIURL" value="https://api.enphaseenergy.com/api/v2" />
+        <env name="FORECAST_APIKEY" value="2ff24af3e1d14c6b44ce1b194b1200cb" />
+        <env name="FORECAST_LOADDATACRONTIME" value="0 0 6 * * *" />
+        <env name="SMARTYSTREETS_AUTHID" value="ecd1ef91-329c-4b0b-b2a1-a934c851df38" />
+        <env name="SMARTYSTREETS_AUTHTOKEN" value="9qNUXObGaVIe5OaHwj7J6OxApHvvq%2Bs2AVwBb%2Fn0Tqk0p4XaL0BsM7mFOC4uGqyz3j7LszIXntXhlJ47y8kDgg%3D%3D" />
+        <env name="SMARTYSTREETS_APIURL" value="https://api.smartystreets.com/street-address" />
+        <env name="AWS_AUTH_ACCESSKEYID" value="AKIAJGSJ4AEKY2PPEGDQ" />
+        <env name="AWS_AUTH_SECRETACCESSKEY" value="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" />
+        <env name="AWS_AUTH_REGION" value="us-west-2" />
+        <env name="AWS_ROUTE53_HOSTEDZONEID" value="Z1TYONFNISU9NJ" />
+        <env name="AWS_ROUTE53_RESOURCERECORDSETBASENAME" value=".brightergy.com." />
+        <env name="AWS_ROUTE53_RESOURCERECORDVALUE" value="brighterlink.brightergy.com." />
+        <env name="ONEALL_PUBLICKEY" value="a349ba4a-896d-4726-b7c2-f38e417cc15f" />
+        <env name="ONEALL_PRIVATEKEY" value="6d2cca60-65e6-4972-89bc-6fa185ba88ba" />
+        <env name="ONEALL_APIURL" value="https://brightergy.api.oneall.com" />
+        <env name="ONEALL_USERTOKENCRYPTOKEY" value="qwerty" />
+        <env name="WEBSOCKETSRESTARTCRONTIME" value="0 */5 * * * *" />
+        <env name="APPLICATION" value="assurf" />
+        <env name="ASSURF_COMPRESSION" value="true" />
+        <env name="ENABLE_ANALYZE" value="true" />
+      </envs>
+      <browser start="true" url="http://localhost:7000/" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Karma.UT-Client" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.Assurf" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.Core" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f957c6eb-d2a4-4fcb-b528-0eadc05112ae" name="Default" comment="" />
+      <created>1432132729245</created>
+      <option name="number" value="Default" />
+      <updated>1432132729245</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18335089" sideWeight="0.58128834" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18335089" sideWeight="0.41871166" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29545453" sideWeight="0.5321391" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30627707" sideWeight="0.4731296" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2943723" sideWeight="0.4678609" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33549783" sideWeight="0.48630136" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/client/components/settings/app/sources-management/list.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="144" column="122" selection-start-line="144" selection-start-column="122" selection-end-line="144" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/services/socket-io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/controllers/SelectionPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/services/power.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/views/includes/sp/kpi.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/directives/animated-number.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/vendor/countup.js/countup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="256" column="54" selection-start-line="256" selection-start-column="54" selection-end-line="256" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/settings/app/shared/interceptors.sevice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/settings/app/shared/account.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/settings/app/sources-management/source.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/platform-panel/app/services/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327645">
+          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/platform-panel/dist/component-platformpanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34759358">
+          <caret line="1166" column="11" selection-start-line="1166" selection-start-column="11" selection-end-line="1166" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/services/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327645">
+          <caret line="99" column="17" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/settings/dist/settings.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34759358">
+          <caret line="0" column="4568" selection-start-line="0" selection-start-column="4568" selection-end-line="0" selection-end-column="4568" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/settings/app/shared/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="21" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/company-panel/js/controllers/company-users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="263" column="37" selection-start-line="263" selection-start-column="37" selection-end-line="263" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/directives/daterange-selector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/platform-panel/app/directives/team-member-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36215335">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/settings/app/shared/util.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5546493">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.docker/envvars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/.docker/envvars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/equivalencies/element.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/realtime-power/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14821124">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/assets/scss/default/components/_login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9615383">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/equivalencies/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28960818">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/solar-energy-production/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/assets/scss/partials/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/assets/scss/partials/_float-panels.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.823529">
+          <caret line="433" column="25" selection-start-line="433" selection-start-column="25" selection-end-line="433" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/front/app/elements/solar-energy-production/element.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/front/app/services/solar-tag.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/front/app/services/weather.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4137931">
+          <caret line="116" column="49" selection-start-line="116" selection-start-column="49" selection-end-line="116" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/client/components/platform-panel/assets/scss/partials/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3475298">
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/front/app/services/socket-io.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/assets/scss/partials/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/assets/scss/partials/_elements.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/services/saving.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/services/source-selection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/front/app/elements/solar-energy-production/drilldown.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/assets/scss/partials/_responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="243" column="25" selection-start-line="243" selection-start-column="25" selection-end-line="243" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/services/energy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="222" column="1" selection-start-line="222" selection-start-column="1" selection-end-line="222" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/solar-energy-production/drilldown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/total-energy-production/element.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+          <folding>
+            <marker date="1444746308434" expanded="true" signature="84:87" placeholder="[...]" />
+            <marker date="1444746308434" expanded="true" signature="3187:3195" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1447942308489" expanded="true" signature="265:368" placeholder="{&quot;reconnection delay&quot;: 1000...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/solar-energy-production/drilldown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="269" column="43" selection-start-line="269" selection-start-column="43" selection-end-line="269" selection-end-column="43" />
+          <folding>
+            <marker date="1444745601420" expanded="true" signature="5310:5363" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/realtime-power/element.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/elements/solar-energy-production/element.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <marker date="1444746308432" expanded="true" signature="4149:4155" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/directives/sp-list-scroll-bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/directives/element-show-loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/views/includes/sp/sources.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.52">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <marker date="1444745601389" expanded="true" signature="33:115" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="90:115" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="133:310" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="752:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="807:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="1431:1580" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="1593:3197" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="1650:2704" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="2215:2375" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="2393:2534" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="2552:2704" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="2719:2858" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="2762:2858" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="2873:3055" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="2917:3055" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3070:3197" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3086:3197" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3208:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3265:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3728:3833" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3850:4786" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3911:4262" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="3958:4262" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4281:4423" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4325:4423" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4442:4635" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4487:4635" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4654:4786" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4674:4786" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4801:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="4862:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="5481:5579" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="5600:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="5665:6004" placeholder="..." />
+            <marker date="1444745601389" expanded="true" signature="5692:6004" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/app/partials/main-stage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0150251">
+          <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

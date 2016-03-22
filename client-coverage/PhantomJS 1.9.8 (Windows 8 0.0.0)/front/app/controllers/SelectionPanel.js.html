@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/controllers/SelectionPanel.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">./front/app/controllers/SelectionPanel.js</span></h1>
+    <h2>
+        Statements: <span class="metric">55.17% <small>(80 / 145)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">24% <small>(12 / 50)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">58.06% <small>(18 / 31)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">55.24% <small>(79 / 143)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./front/app/controllers/</a> &#187; SelectionPanel.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">14</span>
+<span class="cline-any cline-yes">14</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-yes">14</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+  .controller('SelectionPanelController',
+  ['$scope', '$modal', '$filter', 'solarTagService', 'powerService', 'energyService', 'weatherService',
+    'SourceSelectionEventService', 'SourceNotification', 'kmService',
+    function ($scope, $modal, $filter, solarTagService, powerService, energyService, weatherService,
+              SourceSelectionEventService, SourceNotification, kmService) {
+      // Init scope variables
+      $scope.powerInfo = {
+        current: -1,
+        currentDayAvg: 0.5,
+        minAvg: 0,
+        maxAvg: 1,
+        potential: 0
+      };
+&nbsp;
+      $scope.energyInfo = {
+        today: 0,
+        utilitySavingToday: 0,
+        utilitySavingMonth: 0,
+        minAvg: 5,
+        maxAvg: 30
+      };
+&nbsp;
+      $scope.todayWeather = {
+        temperature: {
+          now: 0,
+          min: 0,
+          max: 0
+        },
+        cityName: 'Kansas City',
+        air: {
+          humidity: 0,
+          pressure: 0,
+          windSpeed: 0
+        },
+        sunTime: {
+          sunset: '',
+          sunrise: ''
+        }
+      };
+&nbsp;
+      $scope.foreWeather = [];
+      $scope.historicalWeather = [];
+&nbsp;
+      $scope.facilities = [];
+      $scope.selectedFacilities = [];
+      $scope.selectedScopes = [];
+      $scope.selectedNodes = [];
+      $scope.countNodes = 0;
+      $scope.isSourceListLoaded = false;
+      $scope.isSelectAll = true;
+      $scope.isMainStageLoaded = false;
+      $scope.isWeatherHistoryShown = false;
+&nbsp;
+      $scope.prevModalInstance = null;
+&nbsp;
+      $scope.toggleWeatherHistory = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.isWeatherHistoryShown = !$scope.isWeatherHistoryShown;</span>
+      };
+&nbsp;
+      $scope.loadFacilityList = function (newFacilityList) {
+&nbsp;
+        var lastPowerSumOfSelectedNodes = solarTagService.getLastTotalCurrentPower();
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (lastPowerSumOfSelectedNodes &gt;= 0) {
+<span class="cstat-no" title="statement not covered" >          $scope.powerInfo.current = lastPowerSumOfSelectedNodes;</span>
+        }
+&nbsp;
+        $scope.powerInfo.potential = 0;
+        angular.forEach(newFacilityList, function (facility) {
+          <span class="missing-if-branch" title="else path not taken" >E</span>if (facility.selected) {
+            $scope.powerInfo.potential += facility.potentialPower;
+          }
+        });
+&nbsp;
+        $scope.facilities = $filter('orderBy')(newFacilityList, ['-selected', '+displayName']);
+        $scope.isSourceListLoaded = true;
+      };
+&nbsp;
+      function checkSourcesSelectedStatus (facilities) {
+        angular.forEach(facilities, function (facility) {
+          <span class="missing-if-branch" title="if path not taken" >I</span>if (!facility.scopes.length) { <span class="cstat-no" title="statement not covered" >return; </span>}
+&nbsp;
+          var childrenStatusSum = false;
+          facility.countSelectedChilds = 0;
+          angular.forEach(facility.scopes, function (scope) {
+&nbsp;
+            var nodeStatusSum = false;
+            scope.countSelectedChilds = 0;
+            angular.forEach(scope.nodes, function(node) {
+              nodeStatusSum = nodeStatusSum || node.selected;
+              <span class="missing-if-branch" title="else path not taken" >E</span>if (node.selected) { scope.countSelectedChilds++; }
+            });
+&nbsp;
+            scope.selected = nodeStatusSum;
+            childrenStatusSum = childrenStatusSum || scope.selected;
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (scope.selected) {
+              facility.countSelectedChilds++;
+            }
+            // ToDo: Node selection/deselection
+          });
+&nbsp;
+          facility.selected = childrenStatusSum;
+        });
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function setSourceSelectionRecursively (source, selected) {</span>
+<span class="cstat-no" title="statement not covered" >        source.selected = !!selected;</span>
+<span class="cstat-no" title="statement not covered" >        if ((source.scopes &amp;&amp; !source.scopes.length) ||</span>
+          (source.nodes &amp;&amp; !source.nodes.length) ||
+          (!source.nodes &amp;&amp; !source.scopes)) {
+<span class="cstat-no" title="statement not covered" >          return ;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        var children = source.scopes ? 'scopes' : 'nodes';</span>
+<span class="cstat-no" title="statement not covered" >        angular.forEach(source[children], <span class="fstat-no" title="function not covered" >function (child) {</span></span>
+<span class="cstat-no" title="statement not covered" >          setSourceSelectionRecursively(child, !!selected);</span>
+        });
+      }
+&nbsp;
+      $scope.initLoads = function () {
+        solarTagService
+          .getAll()
+          .then(function (facilities) {
+            angular.forEach(facilities, function (facility) {
+              $scope.countNodes += facility.nodesCount;//facility.scopes.length;
+              $scope.countScopes += facility.scopes.length;
+              $scope.isSelectAll = $scope.isSelectAll &amp;&amp; facility.selected;
+            });
+            return facilities;
+          })
+          .then(function (facilities) {
+            checkSourcesSelectedStatus(facilities);
+            $scope.loadFacilityList(facilities);
+            solarTagService.watchAllSolarTags($scope.loadFacilityList);
+            $scope.getSelectedSources();
+            return true;
+          });
+&nbsp;
+        powerService
+          .watchCurrentPower(<span class="fstat-no" title="function not covered" >function (data) {</span>
+<span class="cstat-no" title="statement not covered" >            console.log('currentPower info:', data);</span>
+            // We will use `assurf:power` for the first time only
+            // after that we will show total sum of power from `assurf:sources` for the Current Power kpi
+<span class="cstat-no" title="statement not covered" >            if ($scope.powerInfo.current &lt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >              angular.extend($scope.powerInfo, data);</span>
+            }
+          });
+&nbsp;
+        energyService
+          .watchCurrentEnergy(<span class="fstat-no" title="function not covered" >function (data) {</span>
+<span class="cstat-no" title="statement not covered" >            console.log('currentEnergy info:', data);</span>
+<span class="cstat-no" title="statement not covered" >            angular.extend($scope.energyInfo, data);</span>
+          });
+&nbsp;
+        weatherService
+          .watchWeather(<span class="fstat-no" title="function not covered" >function (data) {</span>
+<span class="cstat-no" title="statement not covered" >            $scope.todayWeather = data.todayWeather;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.historicalWeather = data.historicalWeather;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.foreWeather = data.foreWeather;</span>
+          });
+&nbsp;
+        SourceSelectionEventService
+          .listenMainStageLoaded(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >            $scope.isMainStageLoaded = true;</span>
+          });
+      };
+&nbsp;
+      $scope.showFacilityDetails = <span class="fstat-no" title="function not covered" >function (selectedFacility) {</span>
+<span class="cstat-no" title="statement not covered" >        if ($scope.prevModalInstance) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.prevModalInstance.dismiss('cancel');</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.prevModalInstance = $modal.open({</span>
+          templateUrl: 'app/partials/facility-details.html',
+          controller: 'facilityDetailsController',
+          windowClass: 'drilldown',
+          size: 'lg',
+          resolve: {
+            selectedFacility: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >              return selectedFacility;</span>
+            }
+          }
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        solarTagService.emitFetchFacilityForDrilldown(selectedFacility.id);</span>
+&nbsp;
+        //Kissmetrics tracking
+<span class="cstat-no" title="statement not covered" >        var contentObj = {'Display Name':selectedFacility.displayName};</span>
+<span class="cstat-no" title="statement not covered" >        kmService.trackEvent('record', 'Visited Facility Detail', contentObj);</span>
+      };
+&nbsp;
+      $scope.toggleSelectSource = <span class="fstat-no" title="function not covered" >function (source, sourceType, $rootScope) {</span>
+        // Todo: Prevent user from deselect all sources
+<span class="cstat-no" title="statement not covered" >        var toggledStatus = source.selected;</span>
+<span class="cstat-no" title="statement not covered" >        var targetSelector = '';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (!toggledStatus) { // when user is going to deselect the all sources</span>
+<span class="cstat-no" title="statement not covered" >          if (sourceType === 'facility') {</span>
+<span class="cstat-no" title="statement not covered" >            if ($scope.selectedFacilities.length - 1 === 0) {</span>
+<span class="cstat-no" title="statement not covered" >              source.selected = !source.selected; </span>  // restore origin status
+&nbsp;
+              //alert('Sorry, but you can\'t deselect whole sources.');
+<span class="cstat-no" title="statement not covered" >              targetSelector = '#' + sourceType + '-' + source.id;</span>
+<span class="cstat-no" title="statement not covered" >              (new SourceNotification(targetSelector)).showNotification();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >              return;</span>
+            }
+          } else {
+<span class="cstat-no" title="statement not covered" >            var countNodesGoingToBeDeselected = source.nodes ? source.nodes.length : 1;</span>
+<span class="cstat-no" title="statement not covered" >            if ($scope.selectedNodes.length - countNodesGoingToBeDeselected  === 0) {</span>
+<span class="cstat-no" title="statement not covered" >              source.selected = !source.selected; </span>  // restore origin status
+&nbsp;
+              //alert('Sorry, but you can\'t deselect whole sources.');
+<span class="cstat-no" title="statement not covered" >              targetSelector = '#' + sourceType + '-' + source.id;</span>
+<span class="cstat-no" title="statement not covered" >              (new SourceNotification(targetSelector)).showNotification();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >              return;</span>
+            }
+          }
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        setSourceSelectionRecursively(source, toggledStatus);</span>
+<span class="cstat-no" title="statement not covered" >        checkSourcesSelectedStatus($scope.facilities);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.getSelectedSources();</span>
+<span class="cstat-no" title="statement not covered" >        $scope.facilities = $filter('orderBy')($scope.facilities, ['-selected', '+displayName']);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (sourceType !== 'node') {</span>
+<span class="cstat-no" title="statement not covered" >          if (source.selected) {</span>
+<span class="cstat-no" title="statement not covered" >            $scope.powerInfo.potential += source.potentialPower;</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            $scope.powerInfo.potential -= source.potentialPower;</span>
+          }
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.isSourceListLoaded = false;</span>
+<span class="cstat-no" title="statement not covered" >        $scope.isMainStageLoaded = false;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        SourceSelectionEventService</span>
+          .broadcast($scope.selectedFacilities, $scope.selectedScopes, $scope.selectedNodes)
+          .resetMainStageChecking();
+      };
+&nbsp;
+      $scope.getSelectedSources = function () {
+&nbsp;
+        $scope.selectedFacilities = [];
+        $scope.selectedScopes = [];
+        $scope.selectedNodes = [];
+        var selectedFacility = $scope.facilities.filter(function (f) {
+          return f.selected;
+        });
+        $scope.selectedFacilities = selectedFacility.map(function (f) {
+          $scope.selectedScopes = $scope.selectedScopes.concat(f.scopes.filter(function (s) {
+            return s.selected;
+          }).map(function (s) {
+            $scope.selectedNodes = $scope.selectedNodes.concat(s.nodes.filter(function (n) {
+              return n.selected;
+            }).map(function (n) {
+              return n.id;
+            }));
+            return s.id;
+          }));
+          return f.id;
+        });
+&nbsp;
+        // Should check if all source is selected
+        <span class="missing-if-branch" title="if path not taken" >I</span>if ($scope.countNodes === $scope.selectedNodes.length) {
+<span class="cstat-no" title="statement not covered" >          $scope.selectedFacilities = [];</span>
+<span class="cstat-no" title="statement not covered" >          $scope.selectedScopes = [];</span>
+<span class="cstat-no" title="statement not covered" >          $scope.selectedNodes = [];</span>
+        }
+      };
+&nbsp;
+      $scope.toggleExpandSource = <span class="fstat-no" title="function not covered" >function (source) {</span>
+<span class="cstat-no" title="statement not covered" >        if (!source.expanded) {</span>
+<span class="cstat-no" title="statement not covered" >          source.expanded = true;</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          source.expanded = !source.expanded;</span>
+        }
+      };
+&nbsp;
+      $scope.toggleSelectAllSource = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.isSelectAll = !$scope.isSelectAll;</span>
+        //console.time('toggleSelectAllSource');
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        angular.forEach($scope.facilities, <span class="fstat-no" title="function not covered" >function (facility) {</span></span>
+<span class="cstat-no" title="statement not covered" >          setSourceSelectionRecursively(facility, $scope.isSelectAll);</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (!$scope.isSelectAll) { // if User clicked 'Deselect All'</span>
+          // Select the first facility in case of User clicked the 'Deselect All'
+<span class="cstat-no" title="statement not covered" >          setSourceSelectionRecursively($scope.facilities[0], true);</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.getSelectedSources();</span>
+        //console.timeEnd('toggleSelectAllSource');
+<span class="cstat-no" title="statement not covered" >        SourceSelectionEventService</span>
+          .broadcast($scope.selectedFacilities, $scope.selectedScopes, $scope.selectedNodes);
+<span class="cstat-no" title="statement not covered" >        $scope.isMainStageLoaded = false;</span>
+      };
+&nbsp;
+      $scope.initLoads();
+    }
+  ]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

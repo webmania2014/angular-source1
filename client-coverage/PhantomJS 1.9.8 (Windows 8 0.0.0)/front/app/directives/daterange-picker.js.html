@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/directives/daterange-picker.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/directives/daterange-picker.js</span></h1>
+    <h2>
+        Statements: <span class="metric">38.46% <small>(5 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">50% <small>(2 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">38.46% <small>(5 / 13)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./front/app/directives/</a> &#187; daterange-picker.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+  .directive('asDaterangePicker',
+  ['moment', function(moment) {
+    return {
+      restrict: 'EA',
+      replace: true,
+      transclude: false,
+      scope: {
+        startDate: '=',
+        endDate: '='
+      },
+      template: ['&lt;div class="date-range-picker"&gt;',
+        '&lt;div class="date-el-wrapper"&gt;',
+        '&lt;span class="dateLabel"&gt;From:&lt;/span&gt;',
+        '&lt;span class="dateValue" ng-bind="startDate | amDateFormat:\'M/DD/YYYY\'"&gt;&lt;/span&gt;',
+        '&lt;/div&gt;',
+        '&lt;div class="date-el-wrapper"&gt;',
+        '&lt;span class="dateLabel"&gt;To:&lt;/span&gt;',
+        '&lt;span class="dateValue" ng-bind="endDate | amDateFormat:\'M/DD/YYYY\'"&gt;&lt;/span&gt;',
+        '&lt;/div&gt;',
+        '&lt;/div&gt;'].join(''),
+      link: function(scope, element, attrs) {
+        var id = attrs.id;
+        var dateFormat = 'M/DD/YYYY',
+          today = moment().format('M/DD/YYYY');
+&nbsp;
+        $(element).find('.dateValue').dateRangePicker({
+          format: dateFormat,
+          separator : '-',
+          container: '#' + id,
+          showShortcuts: false,
+          autoClose: true,
+          startOfWeek: 'monday',
+          endDate: today,
+          getValue: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            if (scope.startDate &amp;&amp; scope.endDate ) {</span>
+<span class="cstat-no" title="statement not covered" >              return [moment(scope.startDate).format(dateFormat),</span>
+                moment(scope.endDate).format(dateFormat)].join('-');
+            } else {
+<span class="cstat-no" title="statement not covered" >              return '';</span>
+            }
+          },
+          setValue: <span class="fstat-no" title="function not covered" >function(s, s1, s2) {</span>
+<span class="cstat-no" title="statement not covered" >            var startDate = moment(s1, dateFormat).valueOf(),</span>
+              endDate = moment(s2, dateFormat).valueOf();
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (startDate !== scope.startDate &amp;&amp; endDate !== scope.endDate) {</span>
+<span class="cstat-no" title="statement not covered" >              scope.startDate = moment(s1, dateFormat).valueOf();</span>
+<span class="cstat-no" title="statement not covered" >              scope.endDate = moment(s2, dateFormat).valueOf();</span>
+<span class="cstat-no" title="statement not covered" >              scope.$apply();</span>
+            }
+          }
+        });
+      }
+    };
+  }]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

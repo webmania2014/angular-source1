@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/controllers/FacilityDetails.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/controllers/FacilityDetails.js</span></h1>
+    <h2>
+        Statements: <span class="metric">31.94% <small>(23 / 72)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">20% <small>(2 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">10.53% <small>(2 / 19)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">31.94% <small>(23 / 72)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./front/app/controllers/</a> &#187; FacilityDetails.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+  .constant('fdChartConfigs', {
+    'power': {
+      title:{text:null}, credits: {enabled:false}, exporting:{enabled:false}, colors:['#ff7a41'],
+      chart: {type:'areaspline', height:410, spacing:[0, 0, 0, 0], style:{width:'100%'}},
+      tooltip:{
+        valueSuffix:'kW', backgroundColor:'rgba(35,43,57,0.98)', borderRadius:3, borderWidth:0, shadow: false,
+        shared: true,
+        useHTML:true, lineWidth:1, crosshairs:{width:2, color:'gray', dashStyle:'shortdot'},
+        style:{color:'#fff',padding: '0px'}
+      },
+      plotOptions: {
+        series: {
+          marker:{enabled:false}, states: {hover:{lineWidth: 1,lineWidthPlus: 0}}, lineWidth: 1,
+          fillColor:{linearGradient:{x1:0,y1:0,x2:0,y2:1},
+            stops : [
+              [0, Highcharts.Color('#ff7a41').setOpacity(0.8).get('rgba')],
+              [1, Highcharts.Color('#ff7a41').setOpacity(0.1).get('rgba')]
+            ]
+          }
+        }
+      },
+      yAxis: {
+        min:0, title:{text: null}, gridLineColor:'#cccccc', plotLines: [{value:0, width:1, color:'#808080'}],
+        labels:{enabled: false}
+      },
+      loading: false
+    },
+    'energy': {
+      chart: {
+        marginBottom: 60, marginRight: 60, spacingLeft: 0, spacingRight: 0, reflow: true, panning: false,
+        height: 300,
+        style: { fontSize: '11px', overflow: 'visible' }
+      },
+      navigator : {enabled:false}, navigation : {buttonOptions:{enabled : false}}, scrollbar : {enabled:false},
+      rangeSelector : { enabled : false }, loading: false, credits: { enabled: false }, title : { text: null },
+      tooltip: {
+        useHTML: true, borderColor: null, borderWidth: 0, borderRadius: 3, shadow: false,
+        spacing: [0,0,0,0], backgroundColor: 'rgba(35, 43, 57, 0.98)', style: {padding: '0px', whiteSpace: 'normal'}
+      },
+      yAxis: {
+        title: null, opposite: true, offset: 50, min: 0, labels: {format:'{value} kWh'}
+      },
+      plotOptions: {
+        candlestick: {
+          color: 'blue',
+          upColor: 'red'
+        }
+      },
+      xAxis: { startOnTick: true }
+    }
+  })
+  /*.controller('facilityDetailsController', ['$scope', '$modalInstance', '$timeout', 'facilityDetailsService',
+   function ($scope, $modalInstance, $timeout, facilityDetailsService) {*/
+  .controller('facilityDetailsController',
+  ['$scope', '$modalInstance', '$timeout', '$filter', '$interpolate', '$http',
+    'moment', 'solarTagService', 'selectedFacility', 'fdChartConfigs', 'kmService',
+    function ($scope, $modalInstance, $timeout, $filter, $interpolate, $http,
+              moment, solarTagService, selectedFacility, fdChartConfigs, kmService) {
+      var fdCallbackId;
+      $scope.currentYear = $scope.selectedYear = moment().year();
+      $scope.lastFacilityInfo = {
+        'operator': 'Brightergy LLC',
+        'predictedAnnualGeneration': 0,
+        'predictedAnnualCarbon': 0,
+        'description': '',
+        'location': {
+          availability: !!selectedFacility.latitude &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!!selectedFacility.longitude,</span>
+          latitude: selectedFacility.latitude,
+          longitude: selectedFacility.longitude
+        },
+        'address': selectedFacility.address,
+        'installAddress': selectedFacility.installAddress,
+        'potentialPower': selectedFacility.potentialPower,
+        'commissioningDate': selectedFacility.commissioningDate === '-'
+                            ? <span class="branch-0 cbranch-no" title="branch not covered" >'N/A'</span>
+                            : moment(selectedFacility.commissioningDate).format('MMMM D, YYYY')
+      };
+&nbsp;
+      $scope.isDataLoaded = false;
+      $scope.isEnergyChartDataLoaded = false;
+      $scope.isPowerChartDataLoaded = false;
+&nbsp;
+      var tootipContents = $interpolate([
+        '&lt;div class="float-panel-info"&gt;&lt;h5 class="title-energy"&gt;Energy Production for &lt;br/&gt; ',
+        '{{currentDate|amDateFormat:"MMMM, YYYY"}} &lt;/h5&gt;',
+        '&lt;div class="row"&gt;&lt;div class="col-xs-6"&lt;span&gt;{{ initialDate }} :&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="orange"&gt;{{ initialValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+        '&lt;div class="row"&gt;&lt;div class="col-xs-6"&gt;&lt;span&gt;Min Production :&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="green"&gt;{{ minValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+        '&lt;div class="row"&gt;&lt;div class="col-xs-6"&gt;&lt;span&gt;Max Production :&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="blue"&gt; {{ maxValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+        '&lt;div class="row"&gt;&lt;div class="col-xs-6"&gt;&lt;span&gt;{{ finalDate }} :&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="orange"&gt; {{ finalValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+        '&lt;/div&gt;'].join(''));
+&nbsp;
+      $scope.powerChartConfig = {
+        options: fdChartConfigs.power,
+        xAxis: {
+          llineColor: 'transparent', categories: [],
+          labels:{formatter: <span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return $filter('amDateFormat')(this.value, 'MMM D');}</span>}
+        },
+        series: [{ data: [] }],
+        func: <span class="fstat-no" title="function not covered" >function (powerChartInstance) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.powerChartInstance = powerChartInstance;</span>
+        }
+      };
+&nbsp;
+      $scope.powerChartConfig.options.tooltip.formatter = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        var tooltipTxt = '&lt;div class="float-panel-info"&gt;';</span>
+<span class="cstat-no" title="statement not covered" >        tooltipTxt += '&lt;h4 class="kpi"&gt;' + $filter('number')(this.points[0].y, 1) + ' kW&lt;/h4&gt;';</span>
+<span class="cstat-no" title="statement not covered" >        tooltipTxt += '&lt;span&gt;Power Generated on ' + $filter('amDateFormat')(this.x, 'MMM D') + '&lt;/span&gt;';</span>
+<span class="cstat-no" title="statement not covered" >        tooltipTxt += '&lt;/div&gt;';</span>
+<span class="cstat-no" title="statement not covered" >        return tooltipTxt;</span>
+      };
+&nbsp;
+      $scope.energyChartInstance = null;
+      $scope.powerChartInstance = null;
+&nbsp;
+      $scope.energyChartConfig = {
+        options: fdChartConfigs.energy, useHighStocks: true,
+        xAxis: { labels: {formatter:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return moment(this.value).format('MMM');}</span>} },
+        series: [{
+          type: 'candlestick',
+          name: 'Energy',
+          color: 'rgba(255, 121, 64, 0.9)',
+          lineColor: 'rgba(254, 189, 159, 0.9)',
+          upColor: 'rgba(254, 189, 159, 0.9)',
+          states: {hover: {enabled: false}},
+          dataGrouping: {enabled: false},
+          data: []
+        }],
+        func: <span class="fstat-no" title="function not covered" >function (energyChartInstance) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.energyChartInstance = energyChartInstance;</span>
+        }
+      };
+&nbsp;
+      $scope.energyChartConfig.options.tooltip.formatter = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return tootipContents({</span>
+          currentDate: this.x,
+          initialDate: moment(this.x).startOf('month').format('MMMM Do'),
+          initialValue: this.points[0].point.open,
+          minValue: this.points[0].point.low,
+          maxValue: this.points[0].point.high,
+          finalDate: (moment(this.x).endOf('month').valueOf() &lt; moment().valueOf()) ?
+              moment(this.x).endOf('month').format('MMMM Do') : moment().format('MMMM Do'),
+          finalValue: this.points[0].point.close
+        });
+      };
+&nbsp;
+      $scope.startWatchFacilityDrilldown = function () {
+        fdCallbackId = solarTagService.getFacilityDrilldown(<span class="fstat-no" title="function not covered" >function (fdData) {</span>
+<span class="cstat-no" title="statement not covered" >          angular.extend($scope.lastFacilityInfo, fdData);</span>
+          //console.log($scope.lastFacilityInfo);
+<span class="cstat-no" title="statement not covered" >          $scope.drawChart();</span>
+<span class="cstat-no" title="statement not covered" >          if (!$scope.lastFacilityInfo.location.availability) {</span>
+<span class="cstat-no" title="statement not covered" >            $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='</span>
+                + $scope.lastFacilityInfo.installAddress)
+                .success(<span class="fstat-no" title="function not covered" >function(resp) {</span>
+<span class="cstat-no" title="statement not covered" >                  $scope.lastFacilityInfo.location = {</span>
+                    'latitude': resp.results[0].geometry.location.lat,
+                    'longitude': resp.results[0].geometry.location.lng,
+                    'availability': true
+                  };
+<span class="cstat-no" title="statement not covered" >                  $scope.drawMap();</span>
+                })
+                .error(<span class="fstat-no" title="function not covered" >function(resp) {</span>
+<span class="cstat-no" title="statement not covered" >                  $scope.lastFacilityInfo.location = {</span>
+                    'latitude': resp.results[0].geometry.location.lat,
+                    'longitude': resp.results[0].geometry.location.lng,
+                    'availability': true
+                  };
+<span class="cstat-no" title="statement not covered" >                  $scope.drawMap();</span>
+                });
+          }
+<span class="cstat-no" title="statement not covered" >          $scope.drawMap();</span>
+<span class="cstat-no" title="statement not covered" >          $scope.isDataLoaded = true;</span>
+<span class="cstat-no" title="statement not covered" >          $scope.isEnergyChartDataLoaded = true;</span>
+<span class="cstat-no" title="statement not covered" >          $scope.isPowerChartDataLoaded = true;</span>
+        });
+      };
+&nbsp;
+      $scope.closeDrilldown = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        solarTagService.unwatchFacilityDrilldown(fdCallbackId);</span>
+<span class="cstat-no" title="statement not covered" >        $modalInstance.dismiss('cancel');</span>
+        //Kissmetrics tracking
+<span class="cstat-no" title="statement not covered" >        var contentObj = {'Display Name':selectedFacility.displayName};</span>
+<span class="cstat-no" title="statement not covered" >        kmService.trackEvent('record', 'Closed Facility Detail', contentObj);</span>
+      };
+&nbsp;
+      $scope.selectYear = <span class="fstat-no" title="function not covered" >function (year) {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.selectedYear = year;</span>
+<span class="cstat-no" title="statement not covered" >        solarTagService.emitFetchFacilityForDrilldown(selectedFacility.id, $scope.selectedYear);</span>
+<span class="cstat-no" title="statement not covered" >        $scope.isEnergyChartDataLoaded = false;</span>
+      };
+&nbsp;
+      $scope.onPowerTabOpen = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.isPowerChartDataLoaded = false;</span>
+<span class="cstat-no" title="statement not covered" >        $timeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >          $scope.powerChartInstance.redraw();</span>
+<span class="cstat-no" title="statement not covered" >          $scope.powerChartInstance.reflow();</span>
+<span class="cstat-no" title="statement not covered" >          $scope.isPowerChartDataLoaded = true;</span>
+        }, 300);
+      };
+&nbsp;
+      $scope.onEnergyTabOpen = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.isEnergyChartDataLoaded = false;</span>
+<span class="cstat-no" title="statement not covered" >        $timeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >          $scope.energyChartInstance.redraw();</span>
+<span class="cstat-no" title="statement not covered" >          $scope.energyChartInstance.reflow();</span>
+<span class="cstat-no" title="statement not covered" >          $scope.isEnergyChartDataLoaded = true;</span>
+        }, 300);
+      };
+&nbsp;
+      $scope.drawMap = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        if ($scope.lastFacilityInfo.location.availability) {</span>
+<span class="cstat-no" title="statement not covered" >          var facilityMapWidth = Math.ceil($('.ppd-mapphoto').width() / 2),</span>
+              facilityPosition = [ $scope.lastFacilityInfo.location.latitude,
+                $scope.lastFacilityInfo.location.longitude ].join(',');
+<span class="cstat-no" title="statement not covered" >          var ppdmapHtml = '&lt;img src="https://maps.googleapis.com/maps/api/staticmap?center=';</span>
+<span class="cstat-no" title="statement not covered" >          ppdmapHtml += facilityPosition + '&amp;markers=' + facilityPosition + '&amp;zoom=14&amp;size=';</span>
+<span class="cstat-no" title="statement not covered" >          ppdmapHtml += facilityMapWidth + 'x410"&gt;';</span>
+<span class="cstat-no" title="statement not covered" >          $('#ppdmap_container').html(ppdmapHtml);</span>
+        }
+      };
+&nbsp;
+      $scope.drawChart = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.powerChartConfig.xAxis.categories = $scope.lastFacilityInfo.powerChart.categories;</span>
+<span class="cstat-no" title="statement not covered" >        $scope.powerChartConfig.series[0].data = $scope.lastFacilityInfo.powerChart.series;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.energyChartConfig.xAxis.categories = $scope.lastFacilityInfo.energyChart.categories;</span>
+<span class="cstat-no" title="statement not covered" >        $scope.energyChartConfig.series[0].data = $scope.lastFacilityInfo.energyChart.series;</span>
+      };
+&nbsp;
+      $scope.startWatchFacilityDrilldown();
+    }
+  ]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

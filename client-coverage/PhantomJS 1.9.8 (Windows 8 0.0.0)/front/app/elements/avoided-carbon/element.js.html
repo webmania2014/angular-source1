@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/elements/avoided-carbon/element.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../prettify.css">
+    <link rel="stylesheet" href="../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/elements/avoided-carbon/element.js</span></h1>
+    <h2>
+        Statements: <span class="metric">4.76% <small>(1 / 21)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">4.76% <small>(1 / 21)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">./front/app/elements/avoided-carbon/</a> &#187; element.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+  .controller('ElementAvoidedCarbonController',
+    ['$scope', '$filter', '$interpolate', 'equivalenciesService', 'SourceSelectionEventService',
+      'asDateRangeSelectorConfig', 'kmService',
+<span class="fstat-no" title="function not covered" >    function ($scope, $filter, $interpolate, equivalenciesService, SourceSelectionEventService,</span>
+              asDateRangeSelectorConfig, kmService) {
+<span class="cstat-no" title="statement not covered" >      $scope.isDataLoaded = false;</span>
+<span class="cstat-no" title="statement not covered" >      $scope.dateRange = 'month';</span>
+<span class="cstat-no" title="statement not covered" >      $scope.lastCarbonAvoided =  {</span>
+        carbonAvoided: 0,
+        carbonAvoidedTotal: 0
+      };
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var iPanelTextSrc = 'Your system avoided &lt;span class="kpi"&gt;{{ Carbon }}lbs&lt;/span&gt; of carbon '</span>
+                                    + 'dioxide {{ dateRange }}.';
+<span class="cstat-no" title="statement not covered" >      $scope.infoPanelText = iPanelTextSrc;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      $scope.$watch('dateRange', <span class="fstat-no" title="function not covered" >function (newVal, oldVal) {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (newVal !== oldVal) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.isDataLoaded = false;</span>
+<span class="cstat-no" title="statement not covered" >          equivalenciesService.emitCarbonAvoided(newVal);</span>
+&nbsp;
+          //Kissmetrics tracking
+<span class="cstat-no" title="statement not covered" >          var contentObj = {'Element':'Avoided Carbon Dioxide Emissions',</span>
+            'dateRange': asDateRangeSelectorConfig.labels[$scope.dateRange]};
+<span class="cstat-no" title="statement not covered" >          kmService.trackEvent('record', 'Click', contentObj);</span>
+        }
+      });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      $scope.watchCarbon = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        equivalenciesService</span>
+          .watchCarbonAvoided(<span class="fstat-no" title="function not covered" >function (CA) {</span>
+<span class="cstat-no" title="statement not covered" >            $scope.lastCarbonAvoided = CA;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.infoPanelText = $interpolate(iPanelTextSrc)({</span>
+              Carbon: $filter('number')(CA.carbonAvoided, 0),
+              dateRange: $scope.dateRange === 'total' ? 'as total' : 'over the last ' + $scope.dateRange
+            });
+<span class="cstat-no" title="statement not covered" >            $scope.isDataLoaded = true;</span>
+          });
+      };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      SourceSelectionEventService.listen(<span class="fstat-no" title="function not covered" >function (event, selectedSources) {</span></span>
+<span class="cstat-no" title="statement not covered" >        $scope.isDataLoaded = false;</span>
+      });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      $scope.watchCarbon();</span>
+    }
+  ])
+  .directive('elementAvoidedCarbon', ['$q', '$modal',
+<span class="fstat-no" title="function not covered" >    function($q, $modal) {</span>
+      /*var openDrilldown = function (lastEquiv) {
+        return $modal.open({
+          templateUrl: 'app/elements/equivalencies/drilldown.html',
+          controller: 'EquivalenciesDrilldownController',
+          windowClass: 'drilldown',
+          size: 'lg',
+          resolve: {
+          }
+        });
+      };*/
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        restrict: 'E',
+        templateUrl: 'app/elements/avoided-carbon/template.html',
+        scope: true,
+        controller: 'ElementAvoidedCarbonController',
+        replace: true,
+        link : <span class="fstat-no" title="function not covered" >function (scope, element, attrs) {</span>
+        }
+      };
+    }
+  ]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

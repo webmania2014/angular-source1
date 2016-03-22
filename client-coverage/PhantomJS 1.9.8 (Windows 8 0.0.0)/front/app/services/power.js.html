@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/services/power.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/services/power.js</span></h1>
+    <h2>
+        Statements: <span class="metric">23.64% <small>(13 / 55)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 22)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">21.43% <small>(3 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">23.64% <small>(13 / 55)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./front/app/services/</a> &#187; power.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+  .service('powerService', ['$q', '$filter', '$sce', 'SocketIO', 'moment', 'solarTagService',
+    function($q, $filter, $sce, SocketIO, moment, solarTagService) {
+      var lastRTPInfo, lastCurrentPowerInfo;
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function getKPIFromRTP(rawRTP) {</span>
+<span class="cstat-no" title="statement not covered" >        var productionBySources = [],</span>
+            totalPowerGeneration = 0;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        angular.forEach(rawRTP.generationBySources, <span class="fstat-no" title="function not covered" >function (generation, sourceId) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var sourceDetail = solarTagService.getSourceDetail(sourceId);</span>
+<span class="cstat-no" title="statement not covered" >          productionBySources.push({</span>
+            'sourceId': generation.sourceId,
+            'displayName': sourceDetail.displayName,
+            'name': generation.name,
+            'kw': (generation.kw.toFixed(1))/1,
+            'trend': generation.trend,
+            'color': sourceDetail.color || '#000'
+          });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          totalPowerGeneration += (generation.kw.toFixed(1))/1;</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          'totalPowerGeneration': totalPowerGeneration.toFixed(1),
+          'totalPowerGenerationTrend': rawRTP.totalGeneration.trend,
+          'generationBySources': $filter('orderBy')(productionBySources, '+displayName')
+        };
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function getPrimaryFromRTP(rawRTP) {</span>
+<span class="cstat-no" title="statement not covered" >        var xaxis, datapoints;</span>
+&nbsp;
+        // Convert date string to timestamp in User timezone;
+<span class="cstat-no" title="statement not covered" >        xaxis = rawRTP.mainChart.categories.map(<span class="fstat-no" title="function not covered" >function (originalDate) {</span></span>
+<span class="cstat-no" title="statement not covered" >          return (new Date(originalDate)).valueOf();</span>
+        });
+&nbsp;
+        // Insert the serie color from source detail
+<span class="cstat-no" title="statement not covered" >        datapoints = rawRTP.mainChart.series.map(<span class="fstat-no" title="function not covered" >function (serie) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var sourceDetail = solarTagService.getSourceDetail(serie.sourceId);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          if (sourceDetail) {</span>
+<span class="cstat-no" title="statement not covered" >            serie.displayName = sourceDetail.displayName;</span>
+<span class="cstat-no" title="statement not covered" >            serie.color = sourceDetail.color;</span>
+          } else <span class="cstat-no" title="statement not covered" >if (serie.name === 'Total Generation') {</span>
+            // $brand-primary color;
+<span class="cstat-no" title="statement not covered" >            serie.color = '#e16030';</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            serie.color = randomColor({luminosity: 'dark'});</span>
+          }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          return serie;</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          'xAxis': xaxis,
+          'datapoints': datapoints
+        };
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function pullLastPowerFromTags (rtpInfo) {</span>
+&nbsp;
+        // KPI update
+<span class="cstat-no" title="statement not covered" >        rtpInfo.kpiData.generationBySources = rtpInfo.kpiData.generationBySources.map(<span class="fstat-no" title="function not covered" >function (generation) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var sourceDetail = solarTagService.getSourceDetail(generation.sourceId);</span>
+<span class="cstat-no" title="statement not covered" >          generation.kw = sourceDetail.lastReportedValue;</span>
+<span class="cstat-no" title="statement not covered" >          return generation;</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        rtpInfo.kpiData.totalPowerGeneration = solarTagService.getLastTotalCurrentPower();</span>
+&nbsp;
+        // Primary Chart update
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        rtpInfo.primary.datapoints = rtpInfo.primary.datapoints.map( <span class="fstat-no" title="function not covered" >function (datapoint) {</span></span>
+<span class="cstat-no" title="statement not covered" >          if (datapoint.sourceId) {</span>
+<span class="cstat-no" title="statement not covered" >            var sourceDetail = solarTagService.getSourceDetail(datapoint.sourceId);</span>
+<span class="cstat-no" title="statement not covered" >            datapoint.data[datapoint.data.length - 1] = sourceDetail.lastReportedValue;</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            datapoint.data[datapoint.data.length - 1] = rtpInfo.kpiData.totalPowerGeneration;</span>
+          }
+<span class="cstat-no" title="statement not covered" >          return datapoint;</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return rtpInfo;</span>
+      }
+&nbsp;
+      this.pullLastPowerFromTags = pullLastPowerFromTags;
+&nbsp;
+      this.watchRTPower = function (callback) {
+&nbsp;
+        SocketIO.watch('assurf:realtimepower', <span class="fstat-no" title="function not covered" >function (data) {</span>
+<span class="cstat-no" title="statement not covered" >          lastRTPInfo = {</span>
+            'history': !!data.history,
+            'kpiData': data.totalGeneration ? getKPIFromRTP(data) : null,
+            'primary': data.mainChart ? getPrimaryFromRTP(data) : null
+          };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          if (data.dateRange === 'today'</span>
+            &amp;&amp; lastRTPInfo.kpiData &amp;&amp; lastRTPInfo.primary
+            &amp;&amp; solarTagService.getLastReportedDateTime()) {
+<span class="cstat-no" title="statement not covered" >            callback(pullLastPowerFromTags(lastRTPInfo));</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            callback(lastRTPInfo);</span>
+          }
+&nbsp;
+        });
+&nbsp;
+        return this;
+      };
+&nbsp;
+      this.watchCurrentPower = function (callback) {
+        SocketIO.watch('assurf:power', <span class="fstat-no" title="function not covered" >function (data) {</span>
+<span class="cstat-no" title="statement not covered" >          lastCurrentPowerInfo = {</span>
+            current: data.currentPower.toFixed(1),
+            currentDayAvg: data.currentDayPower.toFixed(1),
+            minAvg: data.minPower.toFixed(1),
+            maxAvg: data.maxPower.toFixed(1)
+          };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          var lastPowerSumOfSelectedNodes = solarTagService.getLastTotalCurrentPower();</span>
+<span class="cstat-no" title="statement not covered" >          if (lastPowerSumOfSelectedNodes &gt;= 0) {</span>
+<span class="cstat-no" title="statement not covered" >            lastCurrentPowerInfo.current = lastPowerSumOfSelectedNodes;</span>
+          }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          callback(lastCurrentPowerInfo);</span>
+        });
+        return this;
+      };
+&nbsp;
+      this.emitRTPower = <span class="fstat-no" title="function not covered" >function (dateRange) {</span>
+<span class="cstat-no" title="statement not covered" >        var data = {</span>
+          'dateRange': dateRange || 'month'
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        SocketIO.emit('assurf:getrealtimepower', data);</span>
+      };
+    }
+  ]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

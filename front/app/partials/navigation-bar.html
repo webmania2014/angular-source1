@@ -1,0 +1,67 @@
+<nav class="navbar navbar-default glob-nav">
+    <div class="container-fluid">
+        <div class="navbar-header"><a href="#!/main" class="navbar-brand">
+            <div class="brand-image" ng-click="$root.isShowPlatformPanel=false"></div>
+            <div class="icon icon-brighterlink"></div><span class="large-space">Analyze Solar</span><span class="grey-color">Surface</span></a></div>
+        <ul class="nav navbar-links">
+            <li>
+                <as-nav-popup title="More Apps" class="link-app-panel">
+                    <ul class="list-brighterlink-apps">
+                        <li ng-repeat="app in blAppList" ng-class="app.className">
+                            <a ng-href="app.href" target="_blank">
+                                <span class="app-icon"></span>
+                                <span class="app-label" ng-bind="app.label">BL App</span>
+                            </a>
+                        </li>
+                    </ul>
+                </as-nav-popup>
+            </li>
+            <li>
+                <a class="avatar-wrapper">
+                    <span class="availability" ng-class="{online: userInfo.online}"></span>
+                    <span class="avatar" ng-style="userInfo.avatarStyle" ng-bind="userInfo.nameInitial"></span>
+                </a>
+                <as-nav-popup title="Settings" class="link-settings">
+                    <ul class="list-settings-links">
+                        <li>
+                            <a ng-click="openPlatformPanel('user')">
+                                <i class="icon icon-user"></i> Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a ng-click="openPlatformPanel('account')">
+                                <i class="icon icon-account"></i> Account
+                            </a>
+                        </li>
+                        <li>
+                            <a ng-click="doLogout()">
+                                <i class="icon icon-exit"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </as-nav-popup>
+            </li>
+        </ul>
+        <!--button type="button" data-toggle="collapse" data-target="#ass-mobile-nav" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button-->
+        <a href="#mobile-dropdown-menu" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+        <nav id="mobile-dropdown-menu" as-mobile-nav-drop-down="right">
+            <div class="wrapper">
+                <ul class="list-settings-links">
+                    <li><a ng-click="openPlatformPanel('user')"><i class="icon icon-user"></i> Profile</a></li>
+                    <li><a ng-click="openPlatformPanel('account')"><i class="icon icon-account"></i> Account</a></li>
+                    <li><a ng-click="doLogout()"><i class="icon icon-exit"></i> Logout</a></li>
+                </ul>
+                <div class="apps-wrapper">
+                    <ul class="list-brighterlink-apps">
+                        <li ng-repeat="app in blAppList" ng-class="app.className">
+                            <a ng-href="app.href" target="_blank">
+                                <span class="app-icon"></span>
+                                <span class="app-label" ng-bind="app.label">BL App</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</nav>

@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/services/solar-tag.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/services/solar-tag.js</span></h1>
+    <h2>
+        Statements: <span class="metric">49.61% <small>(63 / 127)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">42.65% <small>(29 / 68)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">42.86% <small>(12 / 28)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">50.81% <small>(63 / 124)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./front/app/services/</a> &#187; solar-tag.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-yes">112</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">80</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+  .service('solarTagService', ['$rootScope', '$q', '$window', '$sce', '$filter', 'SocketIO', 'moment', 'tagColors',
+    function($rootScope, $q, $window, $sce, $filter, SocketIO, moment, tagColors) {
+      var colorList = angular.copy(tagColors);
+      var facilityList, lastReportedDateTime = 0;
+      var lastFacilityDrilldown;
+      var lastTotalCurrentPower = -1;
+&nbsp;
+      function nodeInit(node, scope) {
+        node.name = node.displayName || node.name;
+        node.percent = '0' || <span class="branch-1 cbranch-no" title="branch not covered" >node.percent;</span>
+        node.lastReportedValue = '0' || <span class="branch-1 cbranch-no" title="branch not covered" >node.lastReportedValue;</span>
+        node.displayName = node.displayName || node.name;
+        node.selected = node.selected || <span class="branch-1 cbranch-no" title="branch not covered" >false;</span>
+        node.color = randomColor({luminosity: 'dark'});
+&nbsp;
+        return node;
+      }
+&nbsp;
+      function scopeInit(scope, facility) {
+        scope.percent = '0' || <span class="branch-1 cbranch-no" title="branch not covered" >scope.percent;</span>
+        scope.lastReportedValue = '0' || <span class="branch-1 cbranch-no" title="branch not covered" >scope.lastReportedValue;</span>
+        scope.selected = scope.selected || <span class="branch-1 cbranch-no" title="branch not covered" >false;</span>
+        scope.nodes = scope.nodes.map(function (node) {
+          return nodeInit(node, scope);
+        });
+        scope.displayName = scope.displayName || scope.name;
+        scope.potentialPower = scope.potentialPower || 0;
+&nbsp;
+        scope.color = randomColor({luminosity: 'dark'});
+        return scope;
+      }
+&nbsp;
+      function facilityInit(facility) {
+        facility.percent = '0' || <span class="branch-1 cbranch-no" title="branch not covered" >facility.percent;</span>
+        facility.lastReportedValue = '0' || <span class="branch-1 cbranch-no" title="branch not covered" >facility.lastReportedValue;</span>
+        facility.displayName = facility.displayName || <span class="branch-1 cbranch-no" title="branch not covered" >facility.name;</span>
+        facility.geo = facility.geo || <span class="branch-1 cbranch-no" title="branch not covered" >{};</span>
+        facility.commissioningDate = facility.commissioningDate
+          ? (facility.commissioningDate.split('T')[0])
+          : '-';
+        facility.potentialPower = facility.potentialPower || 0;
+        facility.selected = facility.selected || <span class="branch-1 cbranch-no" title="branch not covered" >false;</span>
+        facility.scopes = facility.scopes.map(function (scope) {
+          return scopeInit(scope, facility);
+        });
+&nbsp;
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (facility.selected) {
+          facility.color = colorList.length ? colorList.pop() : <span class="branch-1 cbranch-no" title="branch not covered" >randomColor({luminosity: 'dark'});</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          facility.color = randomColor({luminosity: 'dark'});</span>
+        }
+&nbsp;
+        return facility;
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function nodeUpdate(node, updatedRawNode) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        angular.extend(node, {</span>
+          lastReportedTime: (new Date(updatedRawNode.lastReportedTime)).valueOf(),
+          lastReportedValue: (updatedRawNode.lastReportedValue.toFixed(1))/1,
+          percent: updatedRawNode.percent,
+          totalEnergyGenerated: Math.round(updatedRawNode.totalEnergyGenerated),
+          trend: updatedRawNode.trend
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (node.trend) {</span>
+<span class="cstat-no" title="statement not covered" >          node.trendText = $sce.trustAsHtml(node.trend === 'up' ? '&amp;#8593;' : '&amp;#8595;'); </span>// Up/Down arrow
+        } {
+<span class="cstat-no" title="statement not covered" >          node.trendText = '';</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        lastTotalCurrentPower += node.lastReportedValue;</span>
+<span class="cstat-no" title="statement not covered" >        lastTotalCurrentPower = (lastTotalCurrentPower.toFixed(1))/1;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return node;</span>
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function scopeUpdate(scope, updatedRawScope) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        angular.extend(scope, {</span>
+          lastReportedTime: (new Date(updatedRawScope.lastReportedTime)).valueOf(),
+          lastReportedValue: updatedRawScope.lastReportedValue.toFixed(1) / 1,
+          percent: updatedRawScope.percent,
+          totalEnergyGenerated: Math.round(updatedRawScope.totalEnergyGenerated),
+          trend: updatedRawScope.trend
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (scope.trend) {</span>
+<span class="cstat-no" title="statement not covered" >          scope.trendText = $sce.trustAsHtml(scope.trend === 'up' ? '&amp;#8593;' : '&amp;#8595;'); </span>// Up/Down arrow
+        } {
+<span class="cstat-no" title="statement not covered" >          scope.trendText = '';</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        scope.lastReportedValue = 0;</span>
+<span class="cstat-no" title="statement not covered" >        angular.forEach(scope.nodes, <span class="fstat-no" title="function not covered" >function (node) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var updatedRawNode = updatedRawScope.nodes[node.nodeId];</span>
+<span class="cstat-no" title="statement not covered" >          if (!updatedRawNode) { <span class="cstat-no" title="statement not covered" >return; </span>}</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          nodeUpdate(node, updatedRawNode);</span>
+&nbsp;
+          // Calculate scope's CP from child Node's CP
+<span class="cstat-no" title="statement not covered" >          scope.lastReportedValue += node.lastReportedValue;</span>
+<span class="cstat-no" title="statement not covered" >          scope.lastReportedValue = (scope.lastReportedValue.toFixed(1))/1;</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return scope;</span>
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function facilityUpdate(facility, updatedRawFacility) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        angular.extend(facility, {</span>
+          lastReportedTime: (new Date(updatedRawFacility.lastReportedTime)).valueOf(),
+          lastReportedValue: updatedRawFacility.lastReportedValue.toFixed(1) / 1,
+          percent: updatedRawFacility.percent,
+          totalEnergyGenerated: Math.round(updatedRawFacility.totalEnergyGenerated),
+          trend: updatedRawFacility.trend
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (facility.trend) {</span>
+<span class="cstat-no" title="statement not covered" >          facility.trendText = $sce.trustAsHtml(facility.trend === 'up' ? '&amp;#8593;' : '&amp;#8595;'); </span>// Up/Down arrow
+        } {
+<span class="cstat-no" title="statement not covered" >          facility.trendText = '';</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (lastReportedDateTime &lt; facility.lastReportedTime) {</span>
+<span class="cstat-no" title="statement not covered" >          lastReportedDateTime = facility.lastReportedTime;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        facility.lastReportedValue = 0;</span>
+<span class="cstat-no" title="statement not covered" >        angular.forEach(facility.scopes, <span class="fstat-no" title="function not covered" >function (scope) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var updatedRawScope = updatedRawFacility.scopes[scope.id];</span>
+<span class="cstat-no" title="statement not covered" >          if (!updatedRawScope) { <span class="cstat-no" title="statement not covered" >return; </span>}</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          scopeUpdate(scope, updatedRawScope);</span>
+&nbsp;
+          // Calculate scope's CP from child Node's CP
+<span class="cstat-no" title="statement not covered" >          facility.lastReportedValue += scope.lastReportedValue;</span>
+<span class="cstat-no" title="statement not covered" >          facility.lastReportedValue = (facility.lastReportedValue.toFixed(1))/1;</span>
+        });
+<span class="cstat-no" title="statement not covered" >        return facility;</span>
+      }
+&nbsp;
+      this.getAll = function () {
+&nbsp;
+        facilityList = $window.renderSolarTags.facilities.map(facilityInit);
+&nbsp;
+        return $q.when(facilityList);
+      };
+&nbsp;
+      this.watchAllSolarTags = function (callback, notWantTags) {
+        SocketIO.watch('assurf:sources', <span class="fstat-no" title="function not covered" >function(sources) {</span>
+<span class="cstat-no" title="statement not covered" >          if (notWantTags) {</span>
+<span class="cstat-no" title="statement not covered" >            return callback(true);</span>
+          }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          lastTotalCurrentPower = 0;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          facilityList.map(<span class="fstat-no" title="function not covered" >function (facility) {</span></span>
+<span class="cstat-no" title="statement not covered" >            var updatedRawFacility = sources[facility.id];</span>
+<span class="cstat-no" title="statement not covered" >            if (!updatedRawFacility) { <span class="cstat-no" title="statement not covered" >return facility; </span>}</span>
+<span class="cstat-no" title="statement not covered" >            return facilityUpdate(facility, updatedRawFacility);</span>
+          });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $rootScope.LAST_UPDATED_TIMETIME = lastReportedDateTime;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          callback(facilityList);</span>
+        });
+      };
+&nbsp;
+      this.getSourceDetail = function (sourceId) {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (!sourceId) {
+<span class="cstat-no" title="statement not covered" >          return false;</span>
+        }
+&nbsp;
+        for(var idx=0,len=facilityList.length; idx&lt;len; idx++) {
+          var scopes = facilityList[idx].scopes;
+&nbsp;
+          if (facilityList[idx].id === sourceId) {
+            return facilityList[idx];
+          }
+&nbsp;
+          for(var jdx=0,slen=scopes.length;jdx&lt;slen;jdx++) {
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (scopes[jdx].id === sourceId) {
+<span class="cstat-no" title="statement not covered" >              return scopes[jdx];</span>
+            }
+          }
+        }
+      };
+&nbsp;
+      this.getLastReportedDateTime = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return lastReportedDateTime;</span>
+      };
+&nbsp;
+      this.getLastTotalCurrentPower = function () {
+        return lastTotalCurrentPower;
+      };
+&nbsp;
+      this.getLastUpdatedFacilityList = function () {
+        return facilityList;
+      };
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function getPowerChart(rawPowerChart) {</span>
+<span class="cstat-no" title="statement not covered" >        var categories;</span>
+&nbsp;
+        // Convert date string to timestamp in User timezone;
+<span class="cstat-no" title="statement not covered" >        categories = rawPowerChart.categories.map(<span class="fstat-no" title="function not covered" >function (originalDate) {</span></span>
+<span class="cstat-no" title="statement not covered" >          return (new Date(originalDate)).valueOf();</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          'categories': categories,
+          'series': rawPowerChart.series
+        };
+      }
+&nbsp;
+<span class="fstat-no" title="function not covered" >      function getEnergyChart(rawEnergyChart) {</span>
+<span class="cstat-no" title="statement not covered" >        var categories, series;</span>
+&nbsp;
+        // Convert date string to timestamp in User timezone;
+<span class="cstat-no" title="statement not covered" >        categories = rawEnergyChart.categories.map(<span class="fstat-no" title="function not covered" >function (originalDate) {</span></span>
+<span class="cstat-no" title="statement not covered" >          return (new Date(originalDate)).valueOf();</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        series = rawEnergyChart.series.map(<span class="fstat-no" title="function not covered" >function (item) {</span></span>
+<span class="cstat-no" title="statement not covered" >          return [item[2], item[3], item[4], item[5]];</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          'categories': categories,
+          'series': series,
+          'totalProduction': rawEnergyChart.totalProduction,
+          'year': rawEnergyChart.year
+        };
+      }
+&nbsp;
+      this.getFacilityDrilldown = function (callback) {
+        return SocketIO.watch('assurf:facilitydrilldown', <span class="fstat-no" title="function not covered" >function(rawFD) {</span>
+<span class="cstat-no" title="statement not covered" >          lastFacilityDrilldown = {</span>
+            energyChart: getEnergyChart(rawFD.energyChart),
+            powerChart: getPowerChart(rawFD.powerChart),
+            predictedAnnualGeneration: rawFD.predictedAnnualGeneration,
+            predictedAnnualCarbon: rawFD.predictedCarbonAvoided,
+            facilityImage: rawFD.facilityImage
+          };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          callback(lastFacilityDrilldown);</span>
+        });
+      };
+&nbsp;
+      this.unwatchFacilityDrilldown = <span class="fstat-no" title="function not covered" >function (cbUniqueId) {</span>
+<span class="cstat-no" title="statement not covered" >        SocketIO.unwatch('assurf:facilitydrilldown', cbUniqueId);</span>
+      };
+&nbsp;
+      this.emitFetchFacilityForDrilldown = <span class="fstat-no" title="function not covered" >function (facilityId, energyYear) {</span>
+<span class="cstat-no" title="statement not covered" >        var data = {</span>
+          'inspectedFacility': facilityId,
+          'energyYear': energyYear || (new Date()).getFullYear()
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        SocketIO.emit('assurf:inputfacilitydrilldown', data);</span>
+      };
+    }
+  ]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

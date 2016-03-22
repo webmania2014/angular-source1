@@ -1,0 +1,13 @@
+{
+  "name": "countup.js",
+  "homepage": "https://github.com/ivan-vesely/countup.js",
+  "_release": "7d8b2dd4bb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7d8b2dd4bbda88cdcd99acf07349fab0777974a5"
+  },
+  "_source": "git@github.com:ivan-vesely/countup.js.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:ivan-vesely/countup.js.git"
+}

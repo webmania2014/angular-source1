@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/elements/realtime-power/element.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../prettify.css">
+    <link rel="stylesheet" href="../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/elements/realtime-power/element.js</span></h1>
+    <h2>
+        Statements: <span class="metric">24.04% <small>(25 / 104)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">2.5% <small>(1 / 40)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">30% <small>(6 / 20)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">24.04% <small>(25 / 104)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">./front/app/elements/realtime-power/</a> &#187; element.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+&nbsp;
+  .constant('rtpPrimaryChartConfig', {
+    credits: { enabled: false },
+    chart: {
+      type: 'spline',
+      height: 335,
+      marginTop: 35,
+      marginBottom: 70
+    },
+    plotOptions: {series:{marker:{enabled: false}}},
+    exporting: {enabled: false},
+    tooltip: {
+      valueSuffix: 'k', backgroundColor: 'rgba(35,43,57,0.0)',
+      borderRadius: 3, borderWidth: 0,
+      shadow: false, shared: true, useHTML: true,
+      crosshairs: { width: 2, color: 'gray', dashStyle: 'shortdot' }
+    },
+    yAxis: [{
+      title: { text: '' }, labels: { format: '{value}kW' },
+      opposite: true, min: 0, plotLines: [{ value: 0, width: 0, color: '#808080'}]
+    }, {
+      gridLineWidth: 0, lineWidth: 0, lineColor: '#cccccc', title: { text: '' }
+    }],
+    title: { text: null }, loading: false,
+    legend: { enabled: false }
+  })
+&nbsp;
+  .controller('elementRTPController',
+  ['$rootScope', '$scope', '$interpolate', '$filter', '$timeout', '$modal', 'powerService', 'rtpPrimaryChartConfig',
+    'energyService', 'solarTagService', 'SourceSelectionEventService', 'asDateRangeSelectorConfig', 'kmService',
+    function ($rootScope, $scope, $interpolate, $filter, $timeout, $modal, powerService, rtpPrimaryChartConfig,
+     energyService, solarTagService, SourceSelectionEventService, asDateRangeSelectorConfig, kmService) {
+&nbsp;
+      $scope.isDataLoaded = false;
+      $scope.dateRange = 'month';
+      $scope.noDataRTP = false;
+      $scope.lastRTPower = {};
+&nbsp;
+      $scope.elementTitle = 'Max Power';
+      var dateRangeToElementTitle = {
+        'today': 'Real-Time Power',
+        'week': 'Max Power',
+        'month': 'Max Power'
+      };
+&nbsp;
+      $scope.totalKPITitle = 'Current Day\'s Max';
+      var dateRangeToTotalKPITitle = {
+        'today': 'Current Power',
+        'week': 'Current Hour\'s Max',
+        'month': 'Current Day\'s Max'
+      };
+&nbsp;
+      $scope.primaryChartInstance = null;
+      var infoTextTemplate = $interpolate([
+        '&lt;div class="float-panel-info"&gt;&lt;div class="info-title"&gt;Power Generation&lt;/div&gt;',
+        '&lt;div class="info-title"&gt;{{ theDay }}&lt;/div&gt;&lt;br/&gt;',
+        '&lt;p&gt;Total production for all selected sources {{ theTime }} is ',
+        '&lt;span class="kpi"&gt;{{ totalPower }}kW&lt;/span&gt;.&lt;/p&gt;',
+        '&lt;div class="info-table"&gt;&lt;p&gt;',
+        '&lt;span class="info-key"&gt;Total Generation&lt;/span&gt;&lt;span class="info-value kpi"&gt;{{ totalPower }}kW&lt;/span&gt;',
+        '&lt;/p&gt;{{ infoTable }}&lt;/div&gt;',
+        '&lt;p class="bottom"&gt;Last update {{ lastUpdatedTime }}&lt;/p&gt;&lt;/div&gt;'
+      ].join(''));
+&nbsp;
+      SourceSelectionEventService.listen(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.isDataLoaded = false;</span>
+      });
+&nbsp;
+      $scope.primaryChart = {
+        options: rtpPrimaryChartConfig,
+        series: [],
+        xAxis: {
+          categories: [], 
+          labels: {} 
+          /*startOnTick: true,
+          endOnTick: true,*/ /* Do not uncomment this */
+          /*labels: {            
+            formatter: function () {
+              var format;
+              if ($scope.dateRange === 'today') {
+                format = 'h:mma';
+              } else if ($scope.dateRange === 'week') {
+                format = 'MMM D ha';
+              } else {
+                format = 'MMM D';
+              }
+              return $filter('amDateFormat')(this.value, format);
+            }*/
+        },
+        func: function(primaryChartInstance) {
+          $scope.primaryChartInstance = primaryChartInstance;
+        }
+      };
+&nbsp;
+&nbsp;
+      $scope.$watch('dateRange', function(newVal,oldVal) {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (newVal !== oldVal) {
+<span class="cstat-no" title="statement not covered" >          $scope.isDataLoaded = false;</span>
+<span class="cstat-no" title="statement not covered" >          powerService.emitRTPower(newVal);</span>
+<span class="cstat-no" title="statement not covered" >          $scope.elementTitle = dateRangeToElementTitle[newVal];</span>
+<span class="cstat-no" title="statement not covered" >          $scope.totalKPITitle = dateRangeToTotalKPITitle[newVal];</span>
+&nbsp;
+          //Kissmetrics tracking
+<span class="cstat-no" title="statement not covered" >          var contentObj = {'Element':'Max Power',</span>
+            'dateRange': asDateRangeSelectorConfig.labels[$scope.dateRange]};
+<span class="cstat-no" title="statement not covered" >          kmService.trackEvent('record', 'Click', contentObj);</span>
+        }
+      });
+&nbsp;
+      $scope.primaryChart.options.tooltip.formatter = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        var points = this.points,</span>
+          totalPower = 0;
+<span class="cstat-no" title="statement not covered" >        var index = this.point ? this.point.x : this.points[0].point.x,          </span>
+          categories = $scope.lastRTPower.primary.xAxis;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        var datapoints = points.map(<span class="fstat-no" title="function not covered" >function (point, pidx) {</span></span>
+<span class="cstat-no" title="statement not covered" >          if (point.series.name === 'Total Generation') {</span>
+<span class="cstat-no" title="statement not covered" >            return '';</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            totalPower += Number(point.y.toFixed(1));</span>
+<span class="cstat-no" title="statement not covered" >            return [</span>
+              '&lt;p&gt;',
+              '&lt;span class="info-key"&gt;' + $scope.lastRTPower.primary.datapoints[pidx].displayName + '&lt;/span&gt;',
+              '&lt;span class="info-value" style="color:' + point.point.color + '"&gt;' + point.y.toFixed(1) + 'kW&lt;/span&gt;',
+              '&lt;/p&gt;'
+            ].join('');
+          }
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        var theDayFormat = 'MMM D, h:mma',</span>
+          theTimeFormat = 'h:mma';
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if ($scope.dateRange === 'month') {</span>
+<span class="cstat-no" title="statement not covered" >          theDayFormat = 'MMM D';</span>
+<span class="cstat-no" title="statement not covered" >          theTimeFormat = '';</span>
+        } else <span class="cstat-no" title="statement not covered" >if ($scope.dateRange === 'week') {</span>
+<span class="cstat-no" title="statement not covered" >          theDayFormat = 'MMM D ha';</span>
+<span class="cstat-no" title="statement not covered" >          theTimeFormat = 'ha';</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        var tooltipObject = {</span>
+          theDay: $filter('amDateFormat')(categories[index], theDayFormat),
+          theTime: theTimeFormat ? 'at ' + $filter('amDateFormat')(categories[index], theTimeFormat) : '',
+          totalPower: totalPower.toFixed(1),
+          lastUpdatedTime: $filter('amCalendar')($rootScope.LAST_UPDATED_TIMETIME).toLowerCase(),
+          infoTable: datapoints.slice(0, 5).join('') + (datapoints.length &gt; 5 ? '&lt;p&gt;More...&lt;/p&gt;' : '')
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return infoTextTemplate(tooltipObject);</span>
+      };
+&nbsp;
+      $scope.startWatchPower = function () {
+        powerService.watchRTPower(<span class="fstat-no" title="function not covered" >function (RTPower) {</span>
+<span class="cstat-no" title="statement not covered" >          if (RTPower.history === false) {</span>
+<span class="cstat-no" title="statement not covered" >            $scope.lastRTPower = RTPower;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.drawPrimaryChart(RTPower.primary);</span>
+<span class="cstat-no" title="statement not covered" >            $scope.isDataLoaded = true;</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            $scope.lastRTPower.kpiData = RTPower.kpiData || $scope.lastRTPower.kpiData;</span>
+<span class="cstat-no" title="statement not covered" >            if (RTPower.primary) {</span>
+<span class="cstat-no" title="statement not covered" >              $scope.addToPrimaryChart(RTPower.primary);</span>
+            }
+          }
+        });
+&nbsp;
+        solarTagService.watchAllSolarTags(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >          if ($scope.dateRange === 'today') {</span>
+<span class="cstat-no" title="statement not covered" >            powerService.pullLastPowerFromTags($scope.lastRTPower);</span>
+          }
+        }, false);
+      };
+&nbsp;
+      $scope.drawPrimaryChart = <span class="fstat-no" title="function not covered" >function (chartData) {</span>
+<span class="cstat-no" title="statement not covered" >        $scope.noDataRTP = chartData['xAxis'].length === 0;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.primaryChart.series = chartData['datapoints'];</span>
+        
+        /*
+        X Axis data decision algorithm
+        -Variables
+        nInterval: X Axis data showing interval.  nInterval = 3, e.g. 3AM 6M 9AM
+        printedDays: store first data per day, no time.
+        nCount: X Axis total data count, it will use for MOD operation with nInterval.
+        showDays: number of data will show X Axis.
+        flag: temporary flag variable for algorithm, it will be true when change next day.
+        -Algorithm
+          sample  input data:
+            June 3th 2AM, 3AM, 4AM, 1PM, 2PM, 3PM, 4PM, 5PM, 6PM, 7PM, 8PM, 
+                  9PM, 10PM, 11PM, Jun 4th 12AM, 1AM, 2AM, 3AM, 4AM
+          desired output data:
+            June 3th 2AM, 1PM, 4PM, 7PM, 10PM, June 4th 1AM, 4AM
+          content:
+            X Axis shows data per every nInterval(3), if then, 1AM appear instead of Jun 4th 12AM, 
+              so flag variable will be used when change next day.
+            showDays will push every nInterval(3), if flag is true or current data is first one per day, 
+                data showing format will be 'MMM D, h a', otherwise showing format is 'h a'.
+        */
+<span class="cstat-no" title="statement not covered" >        var nCount = -1;                </span>
+<span class="cstat-no" title="statement not covered" >        $scope.printedDays = [];  </span>
+<span class="cstat-no" title="statement not covered" >        $scope.showDays = [];</span>
+<span class="cstat-no" title="statement not covered" >        var flag = false;</span>
+<span class="cstat-no" title="statement not covered" >        var nInterval = 3;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $scope.primaryChart.xAxis.categories = chartData['xAxis'].map(<span class="fstat-no" title="function not covered" >function(value) {</span></span>
+<span class="cstat-no" title="statement not covered" >            var format;</span>
+<span class="cstat-no" title="statement not covered" >            nCount++;</span>
+<span class="cstat-no" title="statement not covered" >            if ($scope.dateRange === 'week') {</span>
+<span class="cstat-no" title="statement not covered" >              var day = $filter('amDateFormat')(value, 'MMM D');</span>
+<span class="cstat-no" title="statement not covered" >              if ($scope.printedDays.indexOf(day) &lt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >                $scope.printedDays.push(day);</span>
+<span class="cstat-no" title="statement not covered" >                format = 'MMM D, h a';  </span>
+<span class="cstat-no" title="statement not covered" >                if(nCount % nInterval === 0) {</span>
+<span class="cstat-no" title="statement not covered" >                    $scope.showDays.push(nCount);</span>
+                }else{
+<span class="cstat-no" title="statement not covered" >                    flag = true;</span>
+                }
+              } else {
+<span class="cstat-no" title="statement not covered" >                format = 'h a';</span>
+<span class="cstat-no" title="statement not covered" >                if(nCount % nInterval === 0) {</span>
+<span class="cstat-no" title="statement not covered" >                  $scope.showDays.push(nCount);</span>
+<span class="cstat-no" title="statement not covered" >                  if(flag === true) {</span>
+<span class="cstat-no" title="statement not covered" >                    format = 'MMM D, h a';</span>
+<span class="cstat-no" title="statement not covered" >                    flag = false;</span>
+                  }                  
+                }
+              }
+            } else <span class="cstat-no" title="statement not covered" >if ($scope.dateRange === 'today') {</span>
+<span class="cstat-no" title="statement not covered" >              format = 'h:mma';</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >              format = 'MMM D';</span>
+            }
+<span class="cstat-no" title="statement not covered" >            return $filter('amDateFormat')(value, format);</span>
+        });
+&nbsp;
+        
+<span class="cstat-no" title="statement not covered" >        $scope.primaryChart.xAxis.tickPositioner = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            if($scope.dateRange === 'week') {</span>
+<span class="cstat-no" title="statement not covered" >              return $scope.showDays;</span>
+            }  
+        };        
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if($scope.dateRange === 'week') {            </span>
+<span class="cstat-no" title="statement not covered" >            $scope.primaryChart.xAxis.tickInterval = 3;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.primaryChart.xAxis.labels.rotation = -45;</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            $scope.primaryChart.xAxis.tickInterval = 1;</span>
+<span class="cstat-no" title="statement not covered" >            $scope.primaryChart.xAxis.labels.rotation = -45;</span>
+        }
+      };
+&nbsp;
+      $scope.addToPrimaryChart = <span class="fstat-no" title="function not covered" >function (chartData) {</span>
+        // $scope.lastRTPower.primary.xAxis
+        // $scope.lastRTPower.primary.datapoints
+<span class="cstat-no" title="statement not covered" >        angular.forEach(chartData.xAxis, <span class="fstat-no" title="function not covered" >function (x, xIndex) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var matchIndex = $scope.lastRTPower.primary.xAxis.indexOf(x);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          if (matchIndex &gt; -1) {  // if there is same x-axis</span>
+<span class="cstat-no" title="statement not covered" >            $scope.lastRTPower.primary.datapoints.map(<span class="fstat-no" title="function not covered" >function (datapoint, serieIndex) {</span></span>
+<span class="cstat-no" title="statement not covered" >              datapoint.data[matchIndex] = chartData.datapoints[serieIndex].data[xIndex];</span>
+            });
+&nbsp;
+            /*$scope.lastRTPower.primary.datapoints.map(function (datapoint, sourceIndex) {
+              datapoint.data[xIndex] = chartData.datapoints[sourceIndex].data[xIndex];
+            });*/
+          } else {  // if there isn't same xaxis
+<span class="cstat-no" title="statement not covered" >            $scope.lastRTPower.primary.xAxis.push(x);</span>
+<span class="cstat-no" title="statement not covered" >            $scope.lastRTPower.primary.datapoints.map(<span class="fstat-no" title="function not covered" >function (datapoint, serieIndex) {</span></span>
+<span class="cstat-no" title="statement not covered" >              datapoint.data.push(chartData.datapoints[serieIndex].data[xIndex]);</span>
+            });
+          }
+        });
+<span class="cstat-no" title="statement not covered" >        $timeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >          $scope.drawPrimaryChart($scope.lastRTPower.primary);</span>
+        }, 10);
+      };
+&nbsp;
+      $scope.openDrilldown = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        $modal.open({</span>
+          templateUrl: 'app/elements/realtime-power/drilldown.html',
+          controller: 'EnergyDrilldownController',
+          windowClass: 'drilldown',
+          size: 'lg',
+          resolve: {
+          }
+        });
+      };
+      $scope.startWatchPower();
+    }
+  ])
+&nbsp;
+  .directive('elementRealtimePower', function() {
+    return {
+      restrict: 'E',
+      scope: true,
+      controller: 'elementRTPController',
+      templateUrl: 'app/elements/realtime-power/template.html',
+      link : function (scope, element, attrs) {
+        /*element.on('click', function () {
+          scope.openDrilldown();
+        });*/
+      }
+    };
+  });
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

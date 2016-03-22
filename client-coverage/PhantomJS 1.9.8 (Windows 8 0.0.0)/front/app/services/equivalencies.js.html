@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/services/equivalencies.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../prettify.css">
+    <link rel="stylesheet" href="../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/services/equivalencies.js</span></h1>
+    <h2>
+        Statements: <span class="metric">33.33% <small>(6 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">14.29% <small>(1 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">33.33% <small>(6 / 18)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./front/app/services/</a> &#187; equivalencies.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+  .service('equivalenciesService', ['$filter', 'SocketIO',
+    function($filter, SocketIO) {
+      var lastEquiv, lastCarbon;
+&nbsp;
+      this.watchEquivalencies = <span class="fstat-no" title="function not covered" >function (callback) {</span>
+<span class="cstat-no" title="statement not covered" >        SocketIO.watch('assurf:equivalencies', <span class="fstat-no" title="function not covered" >function (equiv) {</span></span>
+<span class="cstat-no" title="statement not covered" >          lastEquiv = {</span>
+            carsRemoved: equiv.passengerVehiclesPerYear,
+            /*homePowered: equiv.homeElectricityUse,*/
+            homePowered: equiv.homeEnergyUse,
+            seedlingsGrown: equiv.numberOfTreeSeedlingsGrownFor10Years,
+            refrigerators: equiv.refrigerators,
+            mobilePhones: equiv.mobilePhones,
+            batteries: equiv.aaBatteries,
+            avoidedCarbon: equiv.avoidedCarbon,
+            gallonsGas: equiv.gallonsOfGasoline,
+            tankersGas: equiv.tankerTrucksFilledWithGasoline,
+            railroadCarsCoal: equiv.railcarsOfCoalburned,
+            barrelsOil: equiv.barrelsOfOilConsumed,
+            propaneCylinders: equiv.propaneCylindersUsedForHomeBarbecues,
+            powerPlants: equiv.coalFiredPowerPlantEmissionsForOneYear,
+            kwh: $filter('number')(equiv.kwh, 0)
+          };
+<span class="cstat-no" title="statement not covered" >          callback(lastEquiv);</span>
+        });
+<span class="cstat-no" title="statement not covered" >        return this;</span>
+      };
+&nbsp;
+      this.emitEquivalencies = <span class="fstat-no" title="function not covered" >function (dateRange) {</span>
+<span class="cstat-no" title="statement not covered" >        var data = {</span>
+          'dateRange': dateRange || 'month'
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        SocketIO.emit('assurf:getequivalencies', data);</span>
+      };
+&nbsp;
+      this.watchCarbonAvoided = <span class="fstat-no" title="function not covered" >function (callback) {</span>
+<span class="cstat-no" title="statement not covered" >        SocketIO.watch('assurf:carbonavoided', <span class="fstat-no" title="function not covered" >function (CA) {</span></span>
+<span class="cstat-no" title="statement not covered" >          lastCarbon = {</span>
+            carbonAvoided: CA.carbonAvoided,
+            carbonAvoidedTotal: CA.carbonAvoidedTotal
+          };
+<span class="cstat-no" title="statement not covered" >          callback(lastCarbon);</span>
+        });
+<span class="cstat-no" title="statement not covered" >        return this;</span>
+      };
+&nbsp;
+      this.emitCarbonAvoided = <span class="fstat-no" title="function not covered" >function (dateRange) {</span>
+<span class="cstat-no" title="statement not covered" >        var data = {</span>
+          'dateRange': dateRange || 'month'
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        SocketIO.emit('assurf:getcarbonavoided', data);</span>
+      };
+    }
+  ]);</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ./front/app/elements/solar-energy-production/drilldown.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../prettify.css">
+    <link rel="stylesheet" href="../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">./front/app/elements/solar-energy-production/drilldown.js</span></h1>
+    <h2>
+        Statements: <span class="metric">26.67% <small>(16 / 60)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">4.17% <small>(1 / 24)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">26.67% <small>(16 / 60)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">./front/app/elements/solar-energy-production/</a> &#187; drilldown.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('bl.analyze.solar.surface')
+&nbsp;
+.constant('candleStickChartConfig', {
+  chart: {
+    marginBottom: 60, marginRight: 60, spacingLeft: 0, spacingRight: 0, reflow: true, panning: false,
+    height: 300, title: { text: null }, subtitle: { text: null },
+    style: { fontSize: '11px', overflow: 'visible' }
+  },
+  navigator : {enabled:false}, navigation : {buttonOptions:{enabled : false}}, scrollbar : {enabled:false},
+  rangeSelector : { enabled : false }, loading: false, credits: { enabled: false }, title : { text: null },
+  tooltip: {
+    useHTML: true, borderColor: null, borderWidth: 0, borderRadius: 3, shadow: false,
+    spacing: [0,0,0,0], backgroundColor: 'rgba(35, 43, 57, 0.9)', style: {padding: '20px', whiteSpace: 'normal'}
+  },
+  yAxis: {
+    title: null, opposite: true, offset: 50, min: 0,
+    labels: { formatter: <span class="fstat-no" title="function not covered" >function() {<span class="cstat-no" title="statement not covered" ></span>return this.value.toLocaleString() + ' kWh';}</span>}
+  },
+  plotOptions: {
+    candlestick: {
+      color: 'blue',
+      upColor: 'red'
+    }
+  },
+  xAxis: { startOnTick: true }
+})
+&nbsp;
+.constant('pieChartConfig', {
+  chart: {
+    borderColor: null, reflow: true, height: 494,
+    style: { fontSize: '11px' }
+  },
+  plotOptions: {
+    pie: { shadow: false, center: ['50%', '50%'], allowPointSelect: true, dataLabels: { useHTML: true }}
+  },
+  title: { text: null }, tooltip: {enabled: true}, loading: false, credits: {enabled: false}
+})
+&nbsp;
+.controller('EnergyGenerationDrilldownCtrl',
+  ['$scope', '$interpolate', '$modalInstance', '$timeout', '$filter', 'moment', 'SourceSelectionEventService',
+  'lastSEG', 'currentDate', 'solarTagService', 'energyService', 'savingService', 'candleStickChartConfig',
+  'pieChartConfig',
+  function($scope, $interpolate, $modalInstance, $timeout, $filter, moment, SourceSelectionEventService,
+           lastSEG, currentDate, solarTagService, energyService, savingService, candleConfig, pieChartConfig) {
+    $scope.lastSEG = lastSEG;
+    $scope.lastSEGDrilldown = null;
+    $scope.currentDate = currentDate;
+    $scope.tableChart = {
+      'data': [],
+      'columns': []
+    };
+    $scope.isDataLoaded = {
+      candle: false,
+      pie: false,
+      table: false
+    };
+&nbsp;
+    var tootipContents = $interpolate([
+      '&lt;div class="blue-box"&gt;&lt;h5 class="title"&gt;Power Generation for the Month&lt;br/&gt; ',
+        //'{{currentDate|amDateFormat:"MMMM, YYYY"}} &lt;/h5&gt;&lt;br&gt;',
+        '{{currentDate}} &lt;/h5&gt;&lt;br&gt;',
+      '&lt;div class="row"&gt;&lt;div class="col-xs-6"&lt;span&gt;{{ initialDate }} :&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="orange"&gt;{{ initialValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+      '&lt;div class="row"&gt;&lt;div class="col-xs-6"&gt;&lt;span&gt;Min Day : {{ minDate }}&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="green"&gt;{{ minValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+      '&lt;div class="row"&gt;&lt;div class="col-xs-6"&gt;&lt;span&gt;Max Day : {{ maxDate }}&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="blue"&gt; {{ maxValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+      '&lt;div class="row"&gt;&lt;div class="col-xs-6"&gt;&lt;span&gt;{{ finalDate }}&lt;/span&gt;&lt;/div&gt;',
+        '&lt;div class="col-xs-6 text-right"&gt;&lt;span class="orange"&gt; {{ finalValue|number:2 }}kWh&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;',
+      '&lt;/div&gt;'].join(''));
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getCandlestickData (data) {</span>
+<span class="cstat-no" title="statement not covered" >      return data.map(<span class="fstat-no" title="function not covered" >function (item) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return [item.timestamp, item.initial, item.maximum, item.minimum, item.final];</span>
+      });
+    }
+&nbsp;
+    $scope.initCharts = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      $scope.candleChartConfig = {</span>
+        options: candleConfig,
+        useHighStocks: true,
+        xAxis: {
+          labels: {formatter:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return moment(this.value).format('MMM, YYYY');}</span>}
+        },
+        series: [{
+          type: 'candlestick',
+          name: 'Energy',
+          color: 'rgba(255, 121, 64, 0.9)',
+          lineColor: 'rgba(254, 189, 159, 0.9)',
+          upColor: 'rgba(254, 189, 159, 0.9)',
+          states: {hover: {enabled: false}},
+          dataGrouping: {enabled: false},
+          data: []
+        }]
+      };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      $scope.candleChartConfig.options.tooltip.formatter = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        var index = this.points[0].point.index,</span>
+            minDate = $scope.lastSEGDrilldown.candlestick.series.data[index].minimumTimestamp,
+            maxDate = $scope.lastSEGDrilldown.candlestick.series.data[index].maximumTimestamp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return tootipContents({</span>
+//          currentDate: this.x, /// 1000,(new Date(this.x)).valueOf(),
+          currentDate: moment(this.x).format('MMMM, YYYY'),
+          initialDate: moment(this.x).startOf('month').format('MMMM Do'),
+          initialValue: this.points[0].point.open,
+          minDate: moment(minDate).format('MMMM Do'),
+          minValue: this.points[0].point.low,
+          maxDate: moment(maxDate).format('MMMM Do'),
+          maxValue: this.points[0].point.high,
+          finalDate: moment(this.x).endOf('month').format('MMMM Do'),
+          finalValue: this.points[0].point.close
+        });
+      };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      $scope.pieChartConfig = pieChartConfig;</span>
+<span class="cstat-no" title="statement not covered" >      $scope.pieChartConfig.legend = {</span>
+        enabled: true,
+        layout: 'vertical',
+        align: 'center',
+        width: 200,
+        itemWidth: 200,
+        verticalAlign: 'bottom',
+        useHTML: true,
+        labelFormatter: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >          return '&lt;div style="text-align: left; white-space: pre-wrap; width: 200px"&gt;' + this.name + '&lt;/div&gt;';</span>
+        }
+      };
+<span class="cstat-no" title="statement not covered" >      $scope.pieChartConfig.series = [{</span>
+        type: 'pie',
+        name: 'Total kWh',
+        data: [],
+        size: '40%',
+        dataLabels: {
+          formatter: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >            return '&lt;div class="pie-datalabel-total"&gt;&lt;b class="value"&gt;' +</span>
+              $filter('number')(this.y, 0) +
+              '&lt;/b&gt;&lt;br /&gt;&lt;span&gt;kWh Total&lt;/span&gt;&lt;/div&gt;';
+          },
+          verticalAlign: 'middle', inside: true, overflow: 'justify',
+          x: 0, distance: -80
+        },
+        tooltip: {pointFormat: '&lt;b&gt;{point.y:.1f} kWh&lt;/b&gt;'}
+      },{
+        type: 'pie',
+        data: [],
+        innerSize: '50%',
+        size: '80%',
+        dataLabels: {
+          formatter: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >            return '&lt;div class="pie-datalabel-point"&gt;' + this.point.name + '&lt;br /&gt;' +</span>
+              '&lt;b class="value"&gt;' + $filter('number')(this.y, 1) + '%&lt;/b&gt;&lt;/div&gt;';
+          },
+          crop: false,
+          connectorColor: '#cccccc',
+          distance: 0,
+          enabled: false,
+          allowPointSelect: true
+        },
+        tooltip: {pointFormat: '&lt;b&gt;{point.y:.1f}%&lt;/b&gt;'},
+        showInLegend: true
+      }];
+/*
+      $scope.pieChartConfig = {
+        options: pieChartConfig,
+        legend: {
+          enabled: true,
+          layout: 'vertical',
+          align: 'right',
+          width: 200,
+          verticalAlign: 'middle',
+          useHTML: true,
+          labelFormatter: function() {
+            return '&lt;div style="text-align: left; width:130px;float:left;"&gt;' + this.name + '&lt;/div&gt;';
+          }
+        },
+        series: [{
+          type: 'pie',
+          name: 'Total kWh',
+          data: [],
+          size: '40%',
+          dataLabels: {
+            formatter: function () {
+              return '&lt;div class="pie-datalabel-total"&gt;&lt;b class="value"&gt;' +
+                $filter('number')(this.y, 0) +
+                '&lt;/b&gt;&lt;br /&gt;&lt;span&gt;kWh Total&lt;/span&gt;&lt;/div&gt;';
+            },
+            verticalAlign: 'middle', inside: true, overflow: 'justify',
+            x: 0, distance: -80
+          },
+          tooltip: {pointFormat: '&lt;b&gt;{point.y:.1f} kWh&lt;/b&gt;'}
+        },{
+          type: 'pie',
+          data: [],
+          innerSize: '50%',
+          size: '80%',
+          dataLabels: {
+            formatter: function () {
+              return '&lt;div class="pie-datalabel-point"&gt;' + this.point.name + '&lt;br /&gt;' +
+                '&lt;b class="value"&gt;' + $filter('number')(this.y, 1) + '%&lt;/b&gt;&lt;/div&gt;';
+            },
+            crop: false,
+            connectorColor: '#cccccc',
+            distance: 0,
+            enabled: false,
+            allowPointSelect: true
+          },
+          tooltip: {pointFormat: '&lt;b&gt;{point.y:.1f}%&lt;/b&gt;'},
+          showInLegend: true
+        }]
+      };*/
+    };
+&nbsp;
+    $scope.startWatchDrilldown = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      energyService</span>
+        .watchSEGDrilldown(<span class="fstat-no" title="function not covered" >function (drilldownData) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.lastSEGDrilldown = drilldownData;</span>
+<span class="cstat-no" title="statement not covered" >          $scope.drawCandleStick(drilldownData);</span>
+        })
+        .watchSEG(<span class="fstat-no" title="function not covered" >function (seg) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.lastSEG = seg;</span>
+<span class="cstat-no" title="statement not covered" >          $scope.drawPieChart(seg);</span>
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      savingService</span>
+        .watchTable(<span class="fstat-no" title="function not covered" >function (table) {</span>
+<span class="cstat-no" title="statement not covered" >          $scope.updateTable(table);</span>
+        });
+    };
+&nbsp;
+    SourceSelectionEventService.listen(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      angular.extend($scope.isDataLoaded, {</span>
+        candle: false,
+        pie: false,
+        table: false
+      });
+    });
+&nbsp;
+    $scope.drawCandleStick = <span class="fstat-no" title="function not covered" >function (segDrilldownData) {</span>
+<span class="cstat-no" title="statement not covered" >      $scope.candleChartConfig.series[0].data = getCandlestickData(segDrilldownData.candlestick.series.data);</span>
+//      $scope.candleChartConfig.xAxis.tickPositions = segDrilldownData.candlestick.series.data.map(function(row) {
+//        return row.timestamp;
+//      });
+<span class="cstat-no" title="statement not covered" >      $scope.candleChartConfig.xAxis.categories = segDrilldownData.candlestick.series.data.map(<span class="fstat-no" title="function not covered" >function(row) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return row.timestamp;</span>
+      });
+<span class="cstat-no" title="statement not covered" >      $scope.isDataLoaded.candle = true;</span>
+    };
+&nbsp;
+    $scope.drawPieChart = <span class="fstat-no" title="function not covered" >function (segData) {</span>
+<span class="cstat-no" title="statement not covered" >      var newSeries = [],</span>
+          newTotal = [];
+<span class="cstat-no" title="statement not covered" >      angular.forEach(segData.pie.series[0].data, <span class="fstat-no" title="function not covered" >function (data) {</span></span>
+<span class="cstat-no" title="statement not covered" >        newSeries.push({</span>
+          name: data[0],
+          y: data[1],
+          color: data[2]
+        });
+      });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      newTotal.push({</span>
+        name: 'Total kWh',
+        y: segData.kpiData.totalProduction,
+        color: '#fff'
+      });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      $scope.pieChartConfig.series[0].data = newTotal;</span>
+<span class="cstat-no" title="statement not covered" >      $scope.pieChartConfig.series[1].data = newSeries;</span>
+<span class="cstat-no" title="statement not covered" >      console.log($scope.pieChartConfig);</span>
+<span class="cstat-no" title="statement not covered" >      $('#gpsPieChart').highcharts($scope.pieChartConfig);</span>
+<span class="cstat-no" title="statement not covered" >      $scope.isDataLoaded.pie = true;</span>
+    };
+&nbsp;
+    $scope.updateTable = <span class="fstat-no" title="function not covered" >function(data) {</span>
+<span class="cstat-no" title="statement not covered" >      var tableData = data.reverse();</span>
+<span class="cstat-no" title="statement not covered" >      $scope.tableChart = {</span>
+        data: tableData,
+        columns: $scope.lastSEG.kpiData.totalProductionBySources.map(<span class="fstat-no" title="function not covered" >function (production) {</span>
+<span class="cstat-no" title="statement not covered" >          return production.displayName;</span>
+        }),
+        sourceNames: $scope.lastSEG.kpiData.totalProductionBySources.map(<span class="fstat-no" title="function not covered" >function (production) {</span>
+<span class="cstat-no" title="statement not covered" >          return production.name;</span>
+        })
+      };
+<span class="cstat-no" title="statement not covered" >      $scope.isDataLoaded.table = true;</span>
+    };
+&nbsp;
+    $scope.closeDrilldown = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      $modalInstance.dismiss('cancel');</span>
+    };
+&nbsp;
+    $timeout(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      $scope.initCharts();</span>
+<span class="cstat-no" title="statement not covered" >      $scope.startWatchDrilldown();</span>
+<span class="cstat-no" title="statement not covered" >      $scope.drawPieChart(lastSEG);</span>
+    }, 20);
+}]);
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 02 2015 18:20:33 GMT+0200 (Central Europe Daylight Time)</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>
